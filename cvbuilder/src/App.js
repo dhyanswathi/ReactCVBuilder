@@ -2,9 +2,15 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      bla
-    </div>
+    <Router>
+      <div className="App">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul>
+      </div>
+    </Router>
   );
 }
 
