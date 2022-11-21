@@ -5,14 +5,18 @@ import App from './App';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import SignUp from './Components/Signup';
+import Header from './Components/Header';
+import CvFields from './Components/CVFields';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header></Header>
       <Routes>
         <Route exact path="/" element={<App/>} />
         <Route path="/SignUp" element={<SignUp/>} />
+        <Route path='/MakeResume' element={<CvFields/>} />
       </Routes>
     </Router>
   </React.StrictMode>
