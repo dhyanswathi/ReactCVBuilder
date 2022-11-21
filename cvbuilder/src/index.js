@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import SignUp from './Components/Signup';
 import Welcome from './Components/Welcome';
+import Login from './Components/Login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
         <Route exact path="/" element={<App/>} />
         {/* <Route path="/SignUp" element={<SignUp/>} /> */}
         <Route path="/Welcome" element={<Welcome/>} />
+        <Route path="/Login" element={<Login/>} />
       </Routes>
     </Router>
   </React.StrictMode>

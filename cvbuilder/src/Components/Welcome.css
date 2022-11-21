@@ -1,0 +1,32 @@
+body{
+    background-color: pink;
+}
+.welcome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 17px;
+    text-align:start;
+    padding-left: 10px;
+}
+.welocme-pic{
+    padding: 20px 20px;
+    height: 440px;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left{
+    margin-left: 20px;
+    margin-right: 0;
+    display: flex;
+}
+footer{
+    background-color: white;
+}

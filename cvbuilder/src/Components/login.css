@@ -1,0 +1,42 @@
+.login {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.section1 {
+    margin-top: 200px;
+}
+
+.login-title {
+    margin-left: 350px;
+    margin-bottom: 40px;
+}
+
+.login-input {
+    display: grid;
+    width: 250px;
+    height: 30px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+
+.login-button {
+    width: 258px;
+    height: 35px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.section2 {
+    background-image: url('../Pictures/art.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
