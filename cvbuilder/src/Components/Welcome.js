@@ -1,7 +1,7 @@
 import React from 'react';
+
   
-function Home (){
+function Welcome (){
     return <h1>Welcome to the CVbuilder</h1>
 }
-  
-export default Home;
+export default Welcome;

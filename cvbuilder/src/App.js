@@ -1,16 +1,9 @@
 import './App.css';
+import Welcome from './Components/Welcome';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-        </ul>
-      </div>
-    </Router>
+    <Welcome></Welcome>
   );
 }
 
