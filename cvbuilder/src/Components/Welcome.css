@@ -43,9 +43,8 @@ footer {
     color: white; */
 }
 
-.nav {
+/* .nav {
     padding-bottom: 40px;
-    /* background-color: black; */
     height: inherit;
 }
 
@@ -54,20 +53,21 @@ footer {
     margin: 10px;
     text-decoration: none;
     font-size: 20px;
-    /* color: white; */
+    font-style: italic;
 }
+
 .nav-right {
     float: right;
     margin: 10px;
     text-decoration: none;
     font-size: 20px;
-    /* color: white; */
+    font-style: italic;
 }
 
 .nav-left:hover,
 .nav-right:hover {
     background-color: blue;
-}
+} */
 
 Link {
     list-style-type: none;

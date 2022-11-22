@@ -7,12 +7,12 @@ import Login from './Login';
 function Welcome() {
     return (
         <div>
-            <nav className='nav'>
+            {/* <nav className='nav'>
                 <Link to="/Home" className='nav-left' style={{listStyleType:'none'}} >Home</Link>
                 <Link to="/About" className='nav-left'>About</Link>
                 <Link to="/Signup" className='nav-right'>Signup</Link>
                 <Link to="/Login" className='nav-right'>Login</Link>
-            </nav>
+            </nav> */}
 
             <Routes>
                 <Route path="/Login" element={<Login />} />
@@ -23,6 +23,7 @@ function Welcome() {
 
             <div className='welcome'>
                 <section>
+                    <h5>Build Your Resume For Free</h5>
                     <p>A CV is a short document that gives you a chance to show a prospective employer the best of what you've got.
                         It sells your skills, experience, and shows them you're the right person for the job.
                         Making a good impression is important in today's competitive job market.
