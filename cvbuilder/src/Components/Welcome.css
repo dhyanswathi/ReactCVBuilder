@@ -1,10 +1,6 @@
-body {
-    /* background-color: pink; */
-}
-
 .welcome {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -13,7 +9,7 @@ body {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #4CAF50;
+    background: #4681f4;
     width: 35%;
     border: 0;
     border-radius: 25px;
@@ -26,8 +22,15 @@ body {
     margin-bottom: 45px;
 }
 
+Link {
+    list-style-type: none;
+}
+
 p {
-    font-size: 17px;
+    font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 450;
+    font-style: italic;
     text-align: start;
     display: inherit;
     padding: 0 30px;
@@ -36,39 +39,85 @@ p {
 .welocme-pic {
     padding: 20px 20px;
     height: 440px;
+    display: none;
 }
 
-footer {
-    /* background-color: black;
-    color: white; */
+h3 {
+    text-align: center;
+    font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+    font-size: 2.3rem;
+    font-weight: 900;
+    /* maybe something else for font family */
 }
 
-/* .nav {
-    padding-bottom: 40px;
-    height: inherit;
-}
-
-.nav-left {
-    float: left;
-    margin: 10px;
-    text-decoration: none;
-    font-size: 20px;
+h5 {
+    font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+    font-weight: 650;
     font-style: italic;
+    text-align: center;
+    display: inherit;
+    margin: -1px 0;
 }
 
-.nav-right {
-    float: right;
-    margin: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    font-style: italic;
-}
+@media screen and (min-width: 501px) {
+    .welcome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
 
-.nav-left:hover,
-.nav-right:hover {
-    background-color: blue;
-} */
+    .welcome-btn {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background: #4681f4;
+        width: 35%;
+        border: 0;
+        border-radius: 25px;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+        margin-bottom: 45px;
+    }
 
-Link {
-    list-style-type: none;
+    Link {
+        list-style-type: none;
+    }
+
+    p {
+        font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 450;
+        font-style: italic;
+        text-align: start;
+        display: inherit;
+        padding: 0 30px;
+    }
+
+    .welocme-pic {
+        padding: 20px 20px;
+        height: 440px;
+        display: flex;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+        font-size: 2.3rem;
+        font-weight: 900;
+        /* maybe something else for font family */
+    }
+
+    h5 {
+        font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+        font-weight: 650;
+        font-style: italic;
+        text-align: center;
+        display: inherit;
+        padding: 0 30px;
+    }
 }

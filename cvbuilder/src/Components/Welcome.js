@@ -3,20 +3,14 @@ import './welcome.css';
 import { Link, Routes, Route } from 'react-router-dom'
 import picture from '../Pictures/picture.png'
 import Login from './Login';
+import SignUp from './Signup'
 
 function Welcome() {
     return (
         <div>
-            {/* <nav className='nav'>
-                <Link to="/Home" className='nav-left' style={{listStyleType:'none'}} >Home</Link>
-                <Link to="/About" className='nav-left'>About</Link>
-                <Link to="/Signup" className='nav-right'>Signup</Link>
-                <Link to="/Login" className='nav-right'>Login</Link>
-            </nav> */}
 
             <Routes>
                 <Route path="/Login" element={<Login />} />
-                {/* <Route path="/Signup" element={<Signup />} /> */}
             </Routes>
 
             <h3>Welcome to the CVbuilder</h3>
@@ -24,16 +18,13 @@ function Welcome() {
             <div className='welcome'>
                 <section>
                     <h5>Build Your Resume For Free</h5>
-                    <p>A CV is a short document that gives you a chance to show a prospective employer the best of what you've got.
-                        It sells your skills, experience, and shows them you're the right person for the job.
-                        Making a good impression is important in today's competitive job market.
-                        Your CV will be your first contact with employers so it's essential to get it right.
-                        A mistake-free CV says you're professional and care how you come across.
-                        Bullet points make it easier to scan for key skills.
-                        Keep it short: no more than two pages.
-                        Don't leave gaps: if you've had time to travel or care for a relative, say what you learned from the experience.
+                    <p> As having a strong CV is one of the most import things for job hunting our idea emerged.
+                        Seeling yourself on the job market can be quite challenging so we are here to make it simple,
+                        making a good impression is fairly important.
+                        You CV is the first contact between you and your potential employer.
+                        Keep it simple and within one page if posible.
                     </p>
-                    <button className='welcome-btn'>presspls</button>
+                    <button className='welcome-btn'>Build your CV</button>
                 </section>
 
                 <section>
@@ -42,7 +33,7 @@ function Welcome() {
 
             </div>
 
-            <footer>footer should come here</footer>
+            <footer></footer>
         </div>
     )
 }
