@@ -4,12 +4,12 @@ import './Header.css';
 
 const Header = () => {
     return (
-    <section className="topnav">
+    <header className="topnav">
             <Link to="/" className="nav-left">HOME</Link>
             <Link to="/About" className="nav-left">ABOUT</Link>
             <Link to="/Login" className="nav-right">LOGIN</Link>
             <Link to="/Signup" className="nav-right">SignUp</Link>
-    </section>
+    </header>
     )
 }
 

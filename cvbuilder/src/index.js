@@ -8,6 +8,7 @@ import SignUp from './Components/Signup';
 import Header from './Components/Header';
 import Welcome from './Components/Welcome';
 import Login from './Components/Login';
+import Footer from './Components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
         <Route path="/Login" element={<Login/>} />
       </Routes>
     </Router>
+    <Footer></Footer>
   </React.StrictMode>
 );
 reportWebVitals();

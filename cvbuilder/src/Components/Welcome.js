@@ -1,24 +1,10 @@
 import React from 'react';
-import './welcome.css';
-import { Link, Routes, Route } from 'react-router-dom'
+import './Welcome.css';
 import picture from '../Pictures/picture.png'
-import Login from './Login';
 
 function Welcome() {
     return (
         <div>
-            {/* <nav className='nav'>
-                <Link to="/Home" className='nav-left' style={{listStyleType:'none'}} >Home</Link>
-                <Link to="/About" className='nav-left'>About</Link>
-                <Link to="/Signup" className='nav-right'>Signup</Link>
-                <Link to="/Login" className='nav-right'>Login</Link>
-            </nav> */}
-
-            <Routes>
-                <Route path="/Login" element={<Login />} />
-                {/* <Route path="/Signup" element={<Signup />} /> */}
-            </Routes>
-
             <h3>Welcome to the CVbuilder</h3>
 
             <div className='welcome'>
@@ -33,7 +19,7 @@ function Welcome() {
                         Keep it short: no more than two pages.
                         Don't leave gaps: if you've had time to travel or care for a relative, say what you learned from the experience.
                     </p>
-                    <button className='welcome-btn'>presspls</button>
+                    <button className='welcome-btn'>Make Your Resume</button>
                 </section>
 
                 <section>
@@ -41,8 +27,6 @@ function Welcome() {
                 </section>
 
             </div>
-
-            <footer>footer should come here</footer>
         </div>
     )
 }
