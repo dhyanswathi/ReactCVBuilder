@@ -7,11 +7,11 @@ import Login from './Login';
 function Welcome() {
     return (
         <div>
-            <nav>
-                <Link to="/Home"><button className='nav-left'>Home</button></Link>
-                <Link to="/About"><button className='nav-left'>About</button></Link>
-                <Link to="/Signup"><button>Signup</button></Link>
-                <Link to="/Login"><button>Login</button></Link>
+            <nav className='nav'>
+                <Link to="/Home" className='nav-left' style={{listStyleType:'none'}} >Home</Link>
+                <Link to="/About" className='nav-left'>About</Link>
+                <Link to="/Signup" className='nav-right'>Signup</Link>
+                <Link to="/Login" className='nav-right'>Login</Link>
             </nav>
 
             <Routes>
@@ -32,6 +32,7 @@ function Welcome() {
                         Keep it short: no more than two pages.
                         Don't leave gaps: if you've had time to travel or care for a relative, say what you learned from the experience.
                     </p>
+                    <button className='welcome-btn'>presspls</button>
                 </section>
 
                 <section>
@@ -39,7 +40,7 @@ function Welcome() {
                 </section>
 
             </div>
-            
+
             <footer>footer should come here</footer>
         </div>
     )

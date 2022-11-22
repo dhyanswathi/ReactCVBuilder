@@ -1,42 +1,68 @@
 .login {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    width: 460px;
+    padding: 8% 0 0;
+    margin: auto;
+    height: 200px;
 }
 
-.section1 {
-    margin-top: 200px;
+h2 {
+    text-align: center;
 }
 
-.login-title {
-    margin-left: 350px;
-    margin-bottom: 40px;
+.login-form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    height: 300px;
 }
 
-.login-input {
-    display: grid;
-    width: 250px;
-    height: 30px;
-    margin-left: 250px;
-    margin-bottom: 10px;
+.login-form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
-.login-button {
-    width: 258px;
-    height: 35px;
-    margin-left: 250px;
-    margin-bottom: 10px;
-    background-color: black;
-    color: white;
+.login-form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    border-radius: 25px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
     cursor: pointer;
-    border: none;
+    margin-bottom: 45px;
 }
 
-.section2 {
-    background-image: url('../Pictures/art.jpg');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.login-form button:hover,
+.login-form button:active,
+.login-form button:focus {
+    background: #43A047;
+}
+
+.login-form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.login-form .message a {
+    color: #4CAF50;
+    text-decoration: none;
 }

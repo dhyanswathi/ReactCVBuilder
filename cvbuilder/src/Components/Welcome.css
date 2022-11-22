@@ -1,32 +1,74 @@
-body{
-    background-color: pink;
+body {
+    /* background-color: pink; */
 }
-.welcome{
+
+.welcome {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
-p{
-    font-size: 17px;
-    text-align:start;
-    padding-left: 10px;
+
+.welcome-btn {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 35%;
+    border: 0;
+    border-radius: 25px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-bottom: 45px;
 }
-.welocme-pic{
+
+p {
+    font-size: 17px;
+    text-align: start;
+    display: inherit;
+    padding: 0 30px;
+}
+
+.welocme-pic {
     padding: 20px 20px;
     height: 440px;
 }
-nav{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+footer {
+    /* background-color: black;
+    color: white; */
 }
-.nav-left{
-    margin-left: 20px;
-    margin-right: 0;
-    display: flex;
+
+.nav {
+    padding-bottom: 40px;
+    /* background-color: black; */
+    height: inherit;
 }
-footer{
-    background-color: white;
+
+.nav-left {
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    /* color: white; */
+}
+.nav-right {
+    float: right;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    /* color: white; */
+}
+
+.nav-left:hover,
+.nav-right:hover {
+    background-color: blue;
+}
+
+Link {
+    list-style-type: none;
 }
