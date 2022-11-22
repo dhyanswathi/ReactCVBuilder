@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import SignUp from './Components/Signup';
 import Header from './Components/Header';
-import CvFields from './Components/CVFields';
+import MakeResume from './Components/MakeResume';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,7 +16,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<App/>} />
         <Route path="/SignUp" element={<SignUp/>} />
-        <Route path='/MakeResume' element={<CvFields/>} />
+        <Route path='/MakeResume' element={<MakeResume/>} />
       </Routes>
     </Router>
   </React.StrictMode>
