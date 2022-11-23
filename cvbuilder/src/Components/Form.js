@@ -1,31 +1,49 @@
-import React from 'react';
-import './Form.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Form.css";
+import { Link } from "react-router-dom";
 
 function Form() {
-    return (
-        <div>
-        <form>
-        <label>Name</label><br/>
-        <input></input><br/>
-        <label>Summary</label><br/>
-        <input></input><br/>
-        <label>Education & Training</label><br/>
-        <input></input><br/>
-        <label>Work Experince</label><br/>
-        <input></input><br/>
-        <label>Techinical Skills</label><br/>
-        <input></input><br/>
-        <label>Languages</label><br/>
-        <input></input><br/>
-        <label>Links</label><br/>
-        <input></input><br/>
-        <label>Certificates</label><br/>
-        <input></input><br/>
-    </form>
+  return (
+    <div>
+      <section id="myform">
+        <h2 id="title">Form</h2>
+        <form id="user-inputs" className="row">
+          <label className='labels'>Name</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Summary</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Education & Training</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Work Experince</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Techinical Skills</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Languages</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Links</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+          <label className='labels'>Certificates</label>
+          <br />
+          <input className='input-fields'></input>
+          <br />
+        </form>
+      </section>
     </div>
-    )
-    
+  );
 }
 
 export default Form;
