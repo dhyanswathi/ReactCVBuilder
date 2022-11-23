@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
 
 body{
-  background: rgb(34,193,195);
-  background: linear-gradient(135deg, rgb(236, 187, 242) 0%,     rgb(248, 137, 165) 100%); 
+  background: rgb(232, 200, 220);
   font-family: "work sans";
 }
 
