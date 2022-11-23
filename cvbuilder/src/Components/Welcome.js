@@ -28,7 +28,7 @@ function Welcome() {
                 </section>
 
                 <section>
-                    <img src={picture} alt="welcome pic" className='welocme-pic' />
+                    <img src={picture} alt="welcome pic" className='welcome-pic' />
                 </section>
 
             </div>
