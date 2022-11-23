@@ -18,7 +18,7 @@ html{
     color:rgb(243, 119, 57);
   }
   #input-fields{
-    
+
   }
   
   #myform{
@@ -72,6 +72,27 @@ html{
     padding-left: 4.5rem;
     padding-bottom: 0.5rem;
     color: rgba(15, 93, 27, 0.9);
+  }
+  .row button{
+    border-radius: 25px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    background: rgb(34,193,195);
+    background: linear-gradient(135deg, rgb(243, 119, 57) 10%,     rgb(233, 197, 176) 100%); 
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-out;
+  }
+  
+  .row button:hover{
+    opacity: 0.8;
+  }
+  
+  #button{
+    padding-bottom: 1.5rem;
   }
   
   

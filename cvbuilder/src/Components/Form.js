@@ -40,6 +40,7 @@ function Form() {
           <br />
           <input className='input-fields'></input>
           <br />
+          <button variant="primary" type="submit" id='btnAddTodo'>Submit</button>
         </form>
       </section>
     </div>
