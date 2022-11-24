@@ -3,6 +3,7 @@ import './Signup.css';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
+
 function SignUp() {
     const [ firstName, setFirstName ] = useState('');
     const [ lastName, setLastName ] = useState('');

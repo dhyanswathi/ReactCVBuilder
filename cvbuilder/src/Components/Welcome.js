@@ -1,6 +1,9 @@
 import React from 'react';
-import './Welcome.css';
-import picture from '../Pictures/picture.png'
+import './welcome.css';
+import { Link, Routes, Route } from 'react-router-dom'
+import picture from '../Pictures/pic2.webp'
+import Login from './Login';
+import SignUp from './Signup'
 
 function Welcome() {
     return (
@@ -10,22 +13,18 @@ function Welcome() {
             <div className='welcome'>
                 <section>
                     <h5>Build Your Resume For Free</h5>
-                    <p>A CV is a short document that gives you a chance to show a prospective employer the best of what you've got.
-                        It sells your skills, experience, and shows them you're the right person for the job.
-                        Making a good impression is important in today's competitive job market.
-                        Your CV will be your first contact with employers so it's essential to get it right.
-                        A mistake-free CV says you're professional and care how you come across.
-                        Bullet points make it easier to scan for key skills.
-                        Keep it short: no more than two pages.
-                        Don't leave gaps: if you've had time to travel or care for a relative, say what you learned from the experience.
+                    <p> As having a strong CV is one of the most import things for job hunting our idea emerged.
+                        Seeling yourself on the job market can be quite challenging so we are here to make it simple,
+                        making a good impression is fairly important.
+                        You CV is the first contact between you and your potential employer.
+                        Keep it simple and within one page if posible.
                     </p>
-                    <button className='welcome-btn'>Make Your Resume</button>
+                    <button className='welcome-btn'>Build your CV</button>
                 </section>
 
-                <section>
-                    <img src={picture} alt="welcome pic" className='welocme-pic' />
+                <section className='welcome-pic'>
+                    <img src={picture} alt="welcome pic" className='welcome-pic' />
                 </section>
-
             </div>
         </div>
     )
