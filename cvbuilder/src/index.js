@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import Form from './Components/Form';
 import SignUp from './Components/Signup';
 import Header from './Components/Header';
 import Welcome from './Components/Welcome';
@@ -22,6 +23,7 @@ root.render(
         <Route path="/SignUp" element={<SignUp/>} />
         <Route path="/Welcome" element={<Welcome/>} />
         <Route path="/Login" element={<Login/>} />
+        <Route path="/Form" element={<Form/>} />
         <Route path="/Resume" element={<Resume/>} />
       </Routes>
     </Router>

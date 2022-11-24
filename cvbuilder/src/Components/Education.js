@@ -14,12 +14,7 @@ function Education() {
 
     return (
         <form id="education" className="row">
-          <label className='labels'>Education & Training</label>
-          <br />
-          <input className='input-fields' type="text"
-        onChange={change} onKeyUp={checkEnter}
-        value={text}></input>
-          <br />
+          
         </form>
     );
 }

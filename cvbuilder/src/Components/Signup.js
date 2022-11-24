@@ -21,7 +21,7 @@ function SignUp() {
           lastName: lastName,
           password: password
         });
-        navigate("/");
+        navigate("/Form");
       }
       // else {
       //   alert("This user already exists!")

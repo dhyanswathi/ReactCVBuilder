@@ -1,44 +1,73 @@
-import React, {useState} from "react";
-import PersonalInfo from "./PersonalInfo";
-import Education from "./Education";
+import React, {useRef} from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-function Form({info}) {
-  const [ userInput, setUserInput ] = useState([]);
+function Form() {
+  const name = useRef(null);
+  const email = useRef(null);
+  const phone = useRef(null);
+  const linkedIn = useRef(null);
+  const summary = useRef(null);
+  const education = useRef(null);
+  const experience = useRef(null);
+  const skills = useRef(null);
+  const languages = useRef(null);
+  const certificates = useRef(null);
 
-  let navigate = useNavigate();
-
-  const postResume = (e) => {
-    e.preventDefault();
-    setUserInput("");
-      navigate("/Resume");
-    }
+  function handleClick() {
+    name.current.focus();
+  }
+  
   
   return (
     <div>
       <section id="myform">
         <h2 id="title">Form</h2>
-        <PersonalInfo></PersonalInfo>
-        <Education></Education>
-        <form className="row">
+        <form className="row" onSubmit={handleClick}>
+        <label className='labels'>Name</label>
+          <br />
+          <input type="text"
+        ref={name}></input>
+          <br />
+          <label className='labels'>Email</label>
+          <br />
+          <input type="text"
+        ref={email}></input>
+          <br />
+          <label className='labels'>Phone Number</label>
+          <br />
+          <input type="text"
+       ref={phone}></input>
+          <br />
+          <label className='labels'>LinkedIn</label>
+          <br />
+          <input type="text"
+        ref={linkedIn}></input>
+          <br />
+          <label className='labels'>Summary</label>
+          <br />
+          <input type="text"
+        ref={summary}></input><br />
+        <label className='labels'>Education & Training</label>
+          <br />
+          <input className='input-fields' type="text" ref={education}></input>
+          <br />
           <label className='labels'>Work Experince</label>
           <br />
-          <input className='input-fields'></input>
+          <input className='input-fields' type="text" ref={experience}></input>
           <br />
           <label className='labels'>Techinical Skills</label>
           <br />
-          <input className='input-fields'></input>
+          <input className='input-fields' type="text" ref={skills}></input>
           <br />
           <label className='labels'>Languages</label>
           <br />
-          <input className='input-fields'></input>
+          <input className='input-fields' type="text" ref={languages}></input>
           <br />
           <label className='labels'>Certificates</label>
           <br />
-          <input className='input-fields'></input>
+          <input className='input-fields' type="text" ref={certificates}></input>
           <br />
-          <button variant="primary" type="submit" id='btnAddTodo' 
-        onClick={postResume}>Submit</button>
+          <button variant="primary" type="submit" id='btnAddTodo'>Submit</button>
         </form>
       </section>
     </div>
