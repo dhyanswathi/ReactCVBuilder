@@ -12,7 +12,6 @@ import Login from './Components/Login';
 import Footer from './Components/Footer';
 import Resume from './Components/Resume';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -32,4 +31,6 @@ root.render(
     <Footer></Footer>
   </React.StrictMode>
 );
+
 reportWebVitals();
+
