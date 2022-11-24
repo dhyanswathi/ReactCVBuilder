@@ -12,7 +12,7 @@ function ProfileImage () {
       
       {selectedImage && (
         <div>
-        <img alt="not found" src={URL.createObjectURL(selectedImage)} />
+        <img className="profileImage" alt="not found" src={URL.createObjectURL(selectedImage)} />
         
         <br />
         <button onClick={()=>setSelectedImage(null)}>Remove</button>
