@@ -1,34 +1,30 @@
 import './login.css';
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; //useNavigate
+import { useNavigate, Link } from 'react-router-dom'; //useNavigate
 
 function Login() {
-  // let navigate = useNavigate();
-  const Baseurl = `https://cvwebapiappcli3.azurewebsites.net/api/userlogin/`
+  let navigate = useNavigate();
+  const Baseurl = `https://cvwebapiappcli3.azurewebsites.net/api/userlogin`
 
   const [data, setData] = useState({
     email: "",
     password: ""
   })
-
   function submit(e) {
     e.preventDefault();
-    axios.get(Baseurl + '/' + data.email, {
-      email: data.email,
+     axios.get(Baseurl + '/' + data.email + '/' + data.password, {
+      userLoginId: data.email,
       password: data.password
     })
-      .then(res => {
-        console.log(res.data)
-      })
-  }
 
+  }
+  const newData = { ...data }
   function handle(e) {
-    const newData = { ...data }
     newData[e.target.id] = e.target.value
     setData(newData)
-    console.log(newData);
-    }
+    // console.log(newData);
+  }
 
   return (
     <div>
@@ -36,7 +32,7 @@ function Login() {
         <h2>Login</h2>
 
         <form className='login-form' onClick={(e) => submit(e)}>
-          <input placeholder='name' onChange={(e) => handle(e)} id="email" defaultValue={data.email} className='login-input'></input>
+          <input placeholder='email' onChange={(e) => handle(e)} id="email" type='email' defaultValue={data.email} className='login-input'></input>
           <input placeholder='password' onChange={(e) => handle(e)} id='password' defaultValue={data.password} className='login-input'></input>
           <button className='login-button'>Log in</button>
           <p className='message'>
@@ -51,3 +47,13 @@ function Login() {
 }
 
 export default Login;
+// const Login = () => {
+//   const { loginWithRedirect, isAuthenticated } = useAuth0();
+//   if (!isAuthenticated) {
+//       return <button
+//           onClick={() => loginWithRedirect()}>
+//       Log In</button>;
+//   }
+// };
+
+// export default Login;

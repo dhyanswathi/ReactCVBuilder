@@ -7,7 +7,7 @@
   }
   
   .topnav a {
-    color: rgb(210, 210, 210);
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -15,7 +15,7 @@
   }
   
   .topnav a:hover {
-    color: rgb(108, 108, 108);
+    color: rgb(61, 61, 61);
     transform: scale(1.2);
   }
 

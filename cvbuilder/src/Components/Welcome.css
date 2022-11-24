@@ -72,7 +72,7 @@ h5 {
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         outline: 0;
-        background:#ff7961  ;
+        background: #ff7961;
         width: 35%;
         border: 0;
         border-radius: 25px;
@@ -83,6 +83,12 @@ h5 {
         transition: all 0.3 ease;
         cursor: pointer;
         margin-bottom: 45px;
+    }
+
+    .welcome button:hover,
+    .welcome button:active,
+    .welcome button:focus {
+        background: #ff6c52;
     }
 
     Link {
@@ -122,3 +128,6 @@ h5 {
         padding: 0 30px;
     }
 }
+/* .welcome-pic: picture {
+    
+} */

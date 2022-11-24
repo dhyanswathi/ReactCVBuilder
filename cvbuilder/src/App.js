@@ -7,6 +7,7 @@ function App() {
         <Welcome/>
       </h1>
     </div>
+
   );
 }
 

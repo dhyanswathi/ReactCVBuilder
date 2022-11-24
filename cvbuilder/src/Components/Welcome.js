@@ -1,7 +1,7 @@
 import React from 'react';
 import './welcome.css';
 import { Link, Routes, Route } from 'react-router-dom'
-import picture from '../Pictures/picture.png'
+import picture from '../Pictures/pic2.webp'
 import Login from './Login';
 import SignUp from './Signup'
 
@@ -27,7 +27,7 @@ function Welcome() {
                     <button className='welcome-btn'>Build your CV</button>
                 </section>
 
-                <section>
+                <section className='welcome-pic'>
                     <img src={picture} alt="welcome pic" className='welcome-pic' />
                 </section>
 
