@@ -6,31 +6,31 @@
 }
 
 h2 {
+    
     text-align: center;
+    font-family: 'open sans', sans-serif;
+    padding: 2rem 0;
+    margin: 0;
+    font-size: 2rem;
 }
 
 .login-form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    height: 300px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  max-width: 100%;
 }
 
 .login-form input {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
+    width: 80%;
+  box-sizing: border-box;
+	border: none;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+  transition: box-shadow 0.2s ease-in;
 }
 
 .login-form button {
@@ -41,13 +41,16 @@ h2 {
     width: 100%;
     border: 0;
     border-radius: 25px;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-    margin-bottom: 45px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+  background: rgb(34,193,195);
+  background: linear-gradient(90deg, rgb(236, 187, 242) 0%,     rgb(248, 137, 165) 100%);
+  border: 0px;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
 }
 
 .login-form button:hover,
@@ -62,7 +65,29 @@ h2 {
     font-size: 12px;
 }
 
-.login-form .message a {
+.message a {
     color: #4CAF50;
     text-decoration: none;
 }
+.login-form input:focus{
+    box-shadow: inset 0px -3px 0px 0px rgba(34,193,195,0.7);
+    outline: none;
+ }
+ 
+ .login-form input::-webkit-input-placeholder{
+   opacity: 1;
+   transition: opacity 0.25s ease-out;
+ }
+ 
+ .login-form input:hover::-webkit-input-placeholder,
+ .login-form input:focus::-webkit-input-placeholder{
+   opacity: 0;
+ }
+ 
+ .login-form label{
+   align-self: start;
+   padding-left: 4.5rem;
+   padding-bottom: 0.5rem;
+   color: rgba(15, 93, 27, 0.9);
+ }
+ 

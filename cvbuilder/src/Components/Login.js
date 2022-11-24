@@ -1,7 +1,8 @@
 import './login.css';
 import axios from 'axios';
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom'; //useNavigate
+import { Link, useNavigate } from 'react-router-dom'
+
 
 function Login() {
   let navigate = useNavigate();
@@ -11,13 +12,14 @@ function Login() {
     email: "",
     password: ""
   })
+  
   function submit(e) {
     e.preventDefault();
      axios.get(Baseurl + '/' + data.email + '/' + data.password, {
       userLoginId: data.email,
       password: data.password
     })
-
+    navigate("/Form");
   }
   const newData = { ...data }
   function handle(e) {
@@ -25,12 +27,11 @@ function Login() {
     setData(newData)
     // console.log(newData);
   }
-
+  
   return (
     <div>
       <section className='login'>
         <h2>Login</h2>
-
         <form className='login-form' onClick={(e) => submit(e)}>
           <input placeholder='email' onChange={(e) => handle(e)} id="email" type='email' defaultValue={data.email} className='login-input'></input>
           <input placeholder='password' onChange={(e) => handle(e)} id='password' defaultValue={data.password} className='login-input'></input>
@@ -40,20 +41,9 @@ function Login() {
             <Link to="/Signup"> Sign up here</Link>
           </p>
         </form>
-
       </section>
     </div>
   );
 }
 
 export default Login;
-// const Login = () => {
-//   const { loginWithRedirect, isAuthenticated } = useAuth0();
-//   if (!isAuthenticated) {
-//       return <button
-//           onClick={() => loginWithRedirect()}>
-//       Log In</button>;
-//   }
-// };
-
-// export default Login;

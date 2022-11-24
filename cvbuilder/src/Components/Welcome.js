@@ -8,11 +8,6 @@ import SignUp from './Signup'
 function Welcome() {
     return (
         <div>
-
-            <Routes>
-                <Route path="/Login" element={<Login />} />
-            </Routes>
-
             <h3>Welcome to the CVbuilder</h3>
 
             <div className='welcome'>
@@ -30,10 +25,7 @@ function Welcome() {
                 <section className='welcome-pic'>
                     <img src={picture} alt="welcome pic" className='welcome-pic' />
                 </section>
-
             </div>
-
-            <footer></footer>
         </div>
     )
 }
