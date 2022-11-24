@@ -39,7 +39,6 @@ function Form() {
     <div>
       <section id="myform">
         <h2 id="title">Form</h2>
-
         <form onSubmit={onSubmit} className="row">
           <ProfileImage></ProfileImage>
           <label className="labels">Name</label>
@@ -135,3 +134,4 @@ function Form() {
 }
 
 export default Form;
+

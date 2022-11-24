@@ -42,8 +42,10 @@ function PersonalInfo() {
           <input type="text"
         onChange={handleChangeFor("Summary")}
         value={info.Summary}></input>
+
           </form>
         </section>
     )
 }
+
 export default PersonalInfo;
