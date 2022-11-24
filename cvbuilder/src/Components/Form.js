@@ -1,21 +1,21 @@
 import React from "react";
+import PersonalInfo from "./PersonalInfo";
+import ProfileImage from "./ProfileImage";
 import "./Form.css";
-import { Link } from "react-router-dom";
+import "./ProfileImage.css";
+
 
 function Form() {
+  
   return (
     <div>
       <section id="myform">
         <h2 id="title">Form</h2>
-        <form id="user-inputs" className="row">
-          <label className='labels'>Name</label>
-          <br />
-          <input className='input-fields'></input>
-          <br />
-          <label className='labels'>Summary</label>
-          <br />
-          <input className='input-fields'></input>
-          <br />
+
+        <form className="row">
+        <ProfileImage></ProfileImage>
+        <PersonalInfo></PersonalInfo>
+         
           <label className='labels'>Education & Training</label>
           <br />
           <input className='input-fields'></input>
@@ -46,5 +46,6 @@ function Form() {
     </div>
   );
 }
+
 
 export default Form;
