@@ -9,6 +9,7 @@ import Header from './Components/Header';
 import Welcome from './Components/Welcome';
 import Login from './Components/Login';
 import Footer from './Components/Footer';
+import Resume from './Components/Resume';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
         <Route path="/SignUp" element={<SignUp/>} />
         <Route path="/Welcome" element={<Welcome/>} />
         <Route path="/Login" element={<Login/>} />
+        <Route path="/Resume" element={<Resume/>} />
       </Routes>
     </Router>
     <Footer></Footer>

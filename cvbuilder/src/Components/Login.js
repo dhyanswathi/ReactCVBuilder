@@ -9,7 +9,7 @@ function Login() {
 
           <form className='login-form'>
             <label>Email</label><br/>
-            <input type='text' placeholder='email' className='login-input'></input><br/>
+            <input type='email' placeholder='email' className='login-input'></input><br/>
             <label>Enter password</label><br/>
             <input type='password' placeholder='password' className='login-input'></input><br/>
             <button className='login-button'>Log in</button>

@@ -12,8 +12,8 @@ function SignUp() {
     let navigate = useNavigate();
 
     const postData = (e) => {
-      const res = axios.get(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin/${email}`);
-      if (res === null) {
+      // const res = axios.get(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin/${email}`);
+      // if (email !== res.userLoginId) {
         e.preventDefault();
         axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
           userLoginId: email,
@@ -23,19 +23,12 @@ function SignUp() {
         });
         navigate("/");
       }
-      else {
-        alert("This user already exists!")
-        navigate("/signup");
-      }      
-    }
+      // else {
+      //   alert("This user already exists!")
+      //   navigate("/signup");
+      // }      
+    //}
     
-    const checkEmail = (e) => {
-      const res = axios.get(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin/${email}`);
-      if (res.email = email) {
-        alert("This user already exists!")
-        navigate("/signup");
-      }
-    }
 
     return (
       <><section id='signupform'>

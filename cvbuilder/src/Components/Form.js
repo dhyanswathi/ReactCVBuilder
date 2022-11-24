@@ -1,10 +1,19 @@
 import React, {useState} from "react";
 import PersonalInfo from "./PersonalInfo";
 import Education from "./Education";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-function Form() {
-  const initialContact = { Name: "", Summary: "", phone: "" };
+function Form({info}) {
+  const [ userInput, setUserInput ] = useState([]);
+
+  let navigate = useNavigate();
+
+  const postResume = (e) => {
+    e.preventDefault();
+    setUserInput("");
+      navigate("/Resume");
+    }
+  
   return (
     <div>
       <section id="myform">
@@ -28,7 +37,8 @@ function Form() {
           <br />
           <input className='input-fields'></input>
           <br />
-          <button>Submit</button>
+          <button variant="primary" type="submit" id='btnAddTodo' 
+        onClick={postResume}>Submit</button>
         </form>
       </section>
     </div>
