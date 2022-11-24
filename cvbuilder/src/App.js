@@ -1,3 +1,5 @@
+
+import './App.css';
 import Welcome from './Components/Welcome';
 import Form from './Components/Form';
 
