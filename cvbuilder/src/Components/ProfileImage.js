@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+
+
 import "./ProfileImage.css";
+
 
 function ProfileImage () {
   const [selectedImage, setSelectedImage] = useState('');
@@ -9,7 +12,7 @@ function ProfileImage () {
       
       {selectedImage && (
         <div>
-        <img alt="not fount" src={URL.createObjectURL(selectedImage)} />
+        <img alt="not found" src={URL.createObjectURL(selectedImage)} />
         
         <br />
         <button onClick={()=>setSelectedImage(null)}>Remove</button>
