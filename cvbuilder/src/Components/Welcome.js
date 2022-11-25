@@ -1,9 +1,7 @@
 import React from 'react';
-import './welcome.css';
-import { Link, Routes, Route } from 'react-router-dom'
+import './Welcome.css';
 import picture from '../Pictures/pic2.webp'
-import Login from './Login';
-import SignUp from './Signup'
+
 
 function Welcome() {
     return (
