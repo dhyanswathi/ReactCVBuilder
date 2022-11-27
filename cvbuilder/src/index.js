@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import Form from './Components/Form';
 import SignUp from './Components/Signup';
-import Header from './Components/Header';
 import Welcome from './Components/Welcome';
 import Login from './Components/Login';
 import Footer from './Components/Footer';
@@ -19,7 +18,6 @@ root.render(
   
   <React.StrictMode>
     <Router>
-      <Header></Header>
       <Routes>
         <Route exact path="/" element={<App/>} />
         <Route path="/SignUp" element={<SignUp/>} />

@@ -1,11 +1,13 @@
 import React from 'react';
 import './Welcome.css';
-import picture from '../Pictures/pic2.webp'
+import picture from '../Pictures/pic2.webp';
+import Header from './Header';
 
 
 function Welcome() {
     return (
         <div>
+            <Header></Header>
             <h3>Welcome to the CVbuilder</h3>
 
             <div className='welcome'>

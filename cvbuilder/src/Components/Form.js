@@ -32,18 +32,18 @@ function Form() {
     localStorage.setItem('PhoneNumber', info.PhoneNumber);
     localStorage.setItem("LinkedIn", info.LinkedIn);
     localStorage.setItem("Summary", info.Summary);
-    localStorage.setItem("Education", info.Education);
-    localStorage.setItem("WorkExperince", info.WorkExperince);
-    localStorage.setItem("TechnicalSkills", info.TechnicalSkills);
-    localStorage.setItem("Languages", info.Languages);
-    localStorage.setItem("Certificates", info.Certificates);
+    localStorage.setItem("Education", info.Education.replace(/\r?\n/g, '<br />'));
+    localStorage.setItem("WorkExperince", info.WorkExperince.replace(/\r?\n/g, '<br />'));
+    localStorage.setItem("TechnicalSkills", info.TechnicalSkills.replace(/\r?\n/g, '<br />'));
+    localStorage.setItem("Languages", info.Languages.replace(/\r?\n/g, '<br />'));
+    localStorage.setItem("Certificates", info.Certificates.replace(/\r?\n/g, '<br />'));
     navigate("/Resume");
   }
   return (
     <div>
       <section id="myform">
         <h2 id="title">Form</h2>
-        <form onSubmit={onSubmit} className="row">
+        <form className="row">
           <ProfileImage></ProfileImage>
           <label className="labels">Name</label>
           <br />
@@ -56,7 +56,7 @@ function Form() {
           <label className="labels">Email</label>
           <br />
           <input
-            type="text"
+            type="email"
             onChange={handleChangeFor("Email")}
             value={info.Email}
           ></input>
@@ -90,45 +90,39 @@ function Form() {
 
           <label className="labels">Education</label>
           <br />
-          <input
-            type="text"
-            onChange={handleChangeFor("Education")}
-            value={info.Education}
-          ></input>
+          <textarea onChange={handleChangeFor("Education")}
+            value={info.Education} rows="8" cols="100"></textarea>
           <br />
           <label className="labels">Work Experince</label>
           <br />
-          <input
-            type="text"
+          <textarea
             onChange={handleChangeFor("WorkExperince")}
-            value={info.WorkExperince}
-          ></input>
+            value={info.WorkExperince} rows="8" cols="100"
+          ></textarea>
           <br />
           <label className="labels">Technical Skills</label>
           <br />
-          <input
-            type="text"
+          <textarea
             onChange={handleChangeFor("TechnicalSkills")}
-            value={info.TechnicalSkills}
-          ></input>
+            value={info.TechnicalSkills} rows="8" cols="100"
+          ></textarea>
           <br />
           <label className="labels">Languages</label>
           <br />
-          <input
-            type="text"
+          <textarea
             onChange={handleChangeFor("Languages")}
-            value={info.Languages}
-          ></input>
+            value={info.Languages} rows="6" cols="100"
+          ></textarea>
           <br />
           <label className="labels">Certificates</label>
           <br />
-          <input
-            type="text"
+          <textarea
             onChange={handleChangeFor("Certificates")}
-            value={info.Certificates}
-          ></input>
+            value={info.Certificates} rows="4" cols="100"
+          ></textarea>
           <br />
-          <button variant="primary" type="submit" id="btnAddTodo">
+          <button variant="primary" type="submit" id="btnAddTodo"
+           onClick={onSubmit}>
             Submit
           </button>
         </form>

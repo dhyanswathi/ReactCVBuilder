@@ -27,28 +27,35 @@ function Resume () {
 
     return (
         <section id="resume">
+             <style>
+              {`@media print {#root {
+    margin: auto;
+    max-width: 100%;
+  }}`}
+          </style>
             <h1>{name}</h1>
             <article className="info">
                 <span>{email}</span><br />
                 <span>{phoneNumber}</span><br />
                 <span>{linkedIn}</span><br />
             </article>
-            <aside><img className="image" src={art}></img></aside>
+            {/* <aside><img className="image" src={art}></img></aside> */}
             <p>{summary}</p>
             <h4>Education</h4>
-            <p>{education}</p>
+            <p dangerouslySetInnerHTML={{ __html: education }} />
             <h4>Experience</h4>
-            <p>{workExperince}</p>
+            <p dangerouslySetInnerHTML={{ __html: workExperince }}/>
             <h4>Skills</h4>
-            <p>{technicalSkills}</p>
+            <p dangerouslySetInnerHTML={{ __html: technicalSkills }}/>
             <h4>Languages</h4>
-            <p>{languages}</p>
+            <p dangerouslySetInnerHTML={{ __html: languages }}/>
             <h4>Certificates</h4>
-            <p>{certificates}</p>
-            <button id="printpagebutton" onClick={printpage}>PRINT</button>
+            <p dangerouslySetInnerHTML={{ __html: certificates }}/>
+            <button id="printpagebutton" onClick={printpage}>PREVIEW</button>
 
         </section>
     )
 }
+
 
 export default Resume;

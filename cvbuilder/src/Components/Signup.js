@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './Signup.css';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
+import Header from './Header';
 
 
 function SignUp() {
@@ -32,7 +33,8 @@ function SignUp() {
     
 
     return (
-      <><section id='signupform'>
+      <><Header></Header>
+      <section id='signupform'>
         <h2 id='title'>Sign Up</h2>
       <form id='user-inputs'className='row'>
         <label className='labels'>First Name</label><br/>
