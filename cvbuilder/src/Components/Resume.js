@@ -28,7 +28,7 @@ function Resume () {
     return (
         <section id="resume">
              <style>
-              {`@media print {#root {
+              {`@media print {#resume {
     margin: auto;
     max-width: 100%;
   }}`}
