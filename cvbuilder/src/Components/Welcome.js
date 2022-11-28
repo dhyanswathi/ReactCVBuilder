@@ -1,5 +1,5 @@
 import React from 'react';
-import './welcome.css';
+import './Welcome.css';
 import { Link} from 'react-router-dom'
 import picture from '../Pictures/test.jpg'
 import Header from './Header';
@@ -14,7 +14,7 @@ function Welcome() {
             <div className='welcome'>
                 <section>
                     <h5 className='h5-welcome'>Build Your Resume For Free</h5>
-                    <p> As having a strong CV is one of the most import things for job hunting our idea emerged.
+                    <p className='p-welcome'> As having a strong CV is one of the most import things for job hunting our idea emerged.
                         Seeling yourself on the job market can be quite challenging so we are here to make it simple,
                         making a good impression is fairly important.
                         You CV is the first contact between you and your potential employer.
