@@ -1,9 +1,7 @@
 import React from 'react';
 import './welcome.css';
-import { Link, Routes, Route } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import picture from '../Pictures/test.jpg'
-import Login from './Login';
-import SignUp from './Signup'
 import Header from './Header';
 import Footer from './Footer';
 

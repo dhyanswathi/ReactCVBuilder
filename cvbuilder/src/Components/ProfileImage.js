@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-
-
 import "./ProfileImage.css";
 
 
@@ -33,4 +31,5 @@ function ProfileImage () {
   );
 };
 
-export default ProfileImage;
+export default ProfileImage
+

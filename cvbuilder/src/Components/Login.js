@@ -5,7 +5,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
-
 function Login() {
   let navigate = useNavigate();
   const Baseurl = `https://cvwebapiappcli3.azurewebsites.net/api/userlogin`
@@ -30,9 +29,10 @@ function Login() {
         }
       }
     })
-
   }
+  
   const newData = { ...data }
+  
   function handle(e) {
     newData[e.target.id] = e.target.value
     setData(newData)

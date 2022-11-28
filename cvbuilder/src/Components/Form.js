@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import ProfileImage from "./ProfileImage";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
-import "./ProfileImage.css";
 import Headerform from "./Headerform";
+import "./ProfileImage.css";
+
 
 function Form() {
   const initialContact = {

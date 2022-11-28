@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Header.css';
-const Headerform = () => {
+
+const Headerform = () => { 
     return (
     <section className="topnav">
             <Link to="/" className="nav-left">Home</Link>
@@ -9,4 +10,5 @@ const Headerform = () => {
     </section>
     )
 }
+
 export default Headerform;

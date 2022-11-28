@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .welcome-btn {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -22,11 +21,9 @@
     margin-bottom: 45px;
     margin-left: 130px;
 }
-
 Link {
     list-style-type: none;
 }
-
 p {
     font-family: "Avenir Next", Calibri, Verdana, sans-serif;
     font-size: 1.4rem;
@@ -36,7 +33,6 @@ p {
     display: inherit;
     padding: 0 30px;
 }
-
 .welcome-pic {
     padding: 20px 20px; 
     height: 440px;
@@ -60,7 +56,6 @@ p {
     display: inherit;
     margin: -1px 0;
 }
-
 @media screen and (min-width: 501px) {
     .welcome {
         display: grid;
@@ -68,12 +63,11 @@ p {
         align-items: center;
         justify-content: center;
     }
-
     .welcome-btn {
         font-family: "Roboto", sans-serif;
         text-transform: uppercase;
         outline: 0;
-        background: #ff7961;
+        background: #FF7961;
         width: 35%;
         border: 0;
         border-radius: 25px;
@@ -86,17 +80,16 @@ p {
         margin-bottom: 45px;
         margin-left: 250px;
     }
-
+    
     .welcome button:hover,
     .welcome button:active,
     .welcome button:focus {
-        background: #ff6c52;
+        background: #FF6C52;
     }
-
+    
     Link {
         list-style-type: none;
     }
-
     p {
         font-family: "Avenir Next", Calibri, Verdana, sans-serif;
         font-size: 1.4rem;
@@ -106,7 +99,6 @@ p {
         display: inherit;
         padding: 0 30px;
     }
-
     .welcome-pic {
         padding: 20px 20px;
         height: 440px;

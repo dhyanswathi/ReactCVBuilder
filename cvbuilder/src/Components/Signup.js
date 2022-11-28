@@ -4,7 +4,6 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
- 
 
 function SignUp() {
     const [ firstName, setFirstName ] = useState('');
