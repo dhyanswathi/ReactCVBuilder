@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import './Signup.css';
+import './Signup.css'
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import Header from './Header';
-
+import Footer from './Footer';
 
 function SignUp() {
     const [ firstName, setFirstName ] = useState('');
@@ -23,7 +23,7 @@ function SignUp() {
           lastName: lastName,
           password: password
         });
-        navigate("/Form");
+        navigate("/Form"); 
       }
       // else {
       //   alert("This user already exists!")
@@ -32,8 +32,9 @@ function SignUp() {
     //}
     
 
-    return (
-      <><Header></Header>
+    return ( 
+      <>
+      <Header></Header>
       <section id='signupform'>
         <h2 id='title'>Sign Up</h2>
       <form id='user-inputs'className='row'>
@@ -53,7 +54,9 @@ function SignUp() {
         <button variant="primary" type="submit" id='btnAddTodo' 
         onClick={postData}>Sign Up</button>
       </form>
-      </section></>
+      </section>
+      <Footer></Footer>
+        </>
     )
     
 }

@@ -1,19 +1,19 @@
 import React from 'react';
-import './Welcome.css';
-import picture from '../Pictures/pic2.webp';
+import './welcome.css';
+import { Link} from 'react-router-dom'
+import picture from '../Pictures/test.jpg'
 import Header from './Header';
-import { Link, useNavigate } from 'react-router-dom';
-
+import Footer from './Footer';
 
 function Welcome() {
     return (
         <div>
             <Header></Header>
-            <h3>Welcome to the CVbuilder</h3>
+            <h3 className='h3-welcome'>Welcome to the Resume Builder</h3>
 
             <div className='welcome'>
                 <section>
-                    <h5>Build Your Resume For Free</h5>
+                    <h5 className='h5-welcome'>Build Your Resume For Free</h5>
                     <p> As having a strong CV is one of the most import things for job hunting our idea emerged.
                         Seeling yourself on the job market can be quite challenging so we are here to make it simple,
                         making a good impression is fairly important.
@@ -29,6 +29,7 @@ function Welcome() {
                     <img src={picture} alt="welcome pic" className='welcome-pic' />
                 </section>
             </div>
+            <Footer></Footer>
         </div>
     )
 }
