@@ -12,26 +12,27 @@ function SignUp() {
     const [ password, setPassword] = useState('');
 
     let navigate = useNavigate();
-
     const postData = (e) => {
-      // const res = axios.get(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin/${email}`);
-      // if (email !== res.userLoginId) {
-        e.preventDefault();
-        axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
-          userLoginId: email,
-          firstName: firstName,
-          lastName: lastName,
-          password: password
-        });
-        navigate("/Form"); 
+      e.preventDefault();
+        axios.get(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin/${email}`, {
+          validateStatus: function(status) {
+            // if(status === 200){
+            //   alert('The user already exists');
+            // }
+            if(status === 404)
+            {
+              axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
+                userLoginId: email,
+                firstName: firstName,
+                lastName: lastName,
+                password: password
+              });
+              navigate("/Form"); 
+            }
+          }
+        })
       }
-      // else {
-      //   alert("This user already exists!")
-      //   navigate("/signup");
-      // }      
-    //}
-    
-
+  
     return ( 
       <>
       <Header></Header>
@@ -39,17 +40,17 @@ function SignUp() {
         <h2 id='title'>Sign Up</h2>
       <form id='user-inputs'className='row'>
         <label className='labels'>First Name</label><br/>
-        <input className='input-fields' type="text" placeholder="Enter your first name.." 
+        <input required className='input-fields' type="text"
         onChange={(e) => setFirstName(e.target.value)}></input><br/>
 
         <label className='labels'>Last Name</label><br/>
-        <input className='input-fields' type="text" placeholder="Enter your last name.." 
+        <input className='input-fields' type="text" aria-required='true' 
         onChange={(e) => setLastName(e.target.value)}></input><br/>
         <label>Email</label><br/>
-        <input className='input-fields' type="email" placeholder="Enter your email address" 
+        <input className='input-fields' type="email" required='required' 
         onChange={(e) => setEmail(e.target.value)}></input><br/>
         <label>Enter password</label><br/>
-        <input className='input-fields' type="password" placeholder="Enter your password" 
+        <input className='input-fields' type="password" required='required'
         onChange={(e) => setPassword(e.target.value)}></input><br/>
         <button variant="primary" type="submit" id='btnAddTodo' 
         onClick={postData}>Sign Up</button>

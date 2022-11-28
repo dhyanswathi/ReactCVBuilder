@@ -3,11 +3,9 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <section>
-            <span className="footer">
-                <p className="footer-p" >® 2022 MADSLADS</p>
-            </span>
-        </section>
+        <div className="footer">
+            <p className="footer-p" >® 2022 MADSLADS</p>
+        </div>
     )
 }
 

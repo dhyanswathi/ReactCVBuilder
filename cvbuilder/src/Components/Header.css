@@ -10,8 +10,9 @@
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; 
     font-size: 20px;
+    font-weight: 100;
   }
   
   .topnav a:hover {
@@ -21,6 +22,7 @@
 
   .nav-left { 
     float: left;
+    font-size: 100px;
   }
 
   .nav-right {

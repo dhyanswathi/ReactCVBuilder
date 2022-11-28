@@ -7,6 +7,7 @@ const Headerform = () => {
     <section className="topnav">
             <Link to="/" className="nav-left">Home</Link>
             <Link to="/About" className="nav-left">About</Link>
+            <Link to='/Welcome' className="nav-right">Log Out</Link>
     </section>
     )
 }
