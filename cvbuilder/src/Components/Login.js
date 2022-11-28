@@ -16,11 +16,19 @@ function Login() {
   
   function submit(e) {
     e.preventDefault();
-     axios.get(Baseurl + '/' + data.email + '/' + data.password, {
+    axios.get(Baseurl + '/' + data.email + '/' + data.password, {
       userLoginId: data.email,
-      password: data.password
+      password: data.password,
+      validateStatus: function(status) {
+        if(status === 200){
+          navigate('/form');
+        }
+        else if(status === 404)
+        {
+          alert('wrong user or pass')
+        }
+      }
     })
-    navigate("/Form");
   }
   const newData = { ...data }
   function handle(e) {

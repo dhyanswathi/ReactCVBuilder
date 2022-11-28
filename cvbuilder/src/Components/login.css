@@ -1,92 +1,136 @@
 .login {
-    width: 100%;
-    padding: 8% 0 0;
-    margin: auto;
-    height: 200px;
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+  margin: 80px auto;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding-bottom: 20px;
 }
-
-h2 {
-    
-    text-align: center;
-    font-family: 'open sans', sans-serif;
-    padding: 2rem 0;
-    margin: 0;
-    font-size: 2rem;
+.h2-login {
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: black
 }
-
 .login-form {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
   max-width: 100%;
 }
-
-.login-form input {
-    width: 80%;
-  box-sizing: border-box;
-	border: none;
-  font-size: 1.3rem;
-  padding-left: 1.5rem;
-  padding-bottom: 1rem;
-  box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
-  transition: box-shadow 0.2s ease-in;
+.login-label {
+  margin: 5px 0;
 }
-
-.login-form button {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #ff7961;
-    width: 100%;
-    border: 0;
-    border-radius: 25px;
+.login-input {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 25px;
+}
+.login-form:focus {
+  box-shadow: inset 0px -3px 0px 0px #FF7961;
+  outline: none;
+}
+.login-form input::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+.login-form input:hover::-webkit-input-placeholder,
+.login-form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.login-button {
+  border-radius: 25px;
   width: 80%;
   height: 40px;
   font-size: 1.3rem;
   color: white;
   font-weight: 700;
-  background: rgb(34,193,195);
-  background: linear-gradient(90deg, rgb(236, 187, 242) 0%,     rgb(248, 137, 165) 100%);
+  background: linear-gradient(90deg, rgb(255, 161, 46) 0%, rgb(255, 115, 63) 100%);
   border: 0px;
   cursor: pointer;
   transition: opacity 0.25s ease-out;
+  margin-top: 25px;
 }
-
-.login-form button:hover,
-.login-form button:active,
-.login-form button:focus {
-    background: #ff6c52;
+.message {
+  margin: 15px 0 0;
+  color: #B3B3B3;
+  font-size: 12px;
 }
-
-.login-form .message {
-    margin: 15px 0 0;
-    color: #b3b3b3;
-    font-size: 12px;
-}
-
 .message a {
-    color: #4CAF50;
-    text-decoration: none;
+  text-decoration: none;
 }
-.login-form input:focus{
-    box-shadow: inset 0px -3px 0px 0px rgba(34,193,195,0.7);
-    outline: none;
- }
- 
- .login-form input::-webkit-input-placeholder{
-   opacity: 1;
-   transition: opacity 0.25s ease-out;
- }
- 
- .login-form input:hover::-webkit-input-placeholder,
- .login-form input:focus::-webkit-input-placeholder{
-   opacity: 0;
- }
- 
- .login-form label{
-   align-self: start;
-   padding-left: 4.5rem;
-   padding-bottom: 0.5rem;
-   color: rgba(15, 93, 27, 0.9);
- }
+@media screen and (min-width: 501px) {
+  .login {
+      max-width: 500px;
+      min-width: 300px;
+      max-height: 700px;
+      width: 30%;
+      height: 60%;
+      margin: 80px auto;
+      background-color: #FFFFFF;
+      border-radius: 25px;
+      padding-bottom: 20px;
+  }
+  .h2-login {
+      text-align: center;
+      font-family: 'open sans', sans-serif;
+      padding: 2rem 0;
+      font-size: 2rem;
+      color: black
+  }
+  .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem;
+      max-width: 100%;
+  }
+  .login-label {
+      margin: 5px 0;
+  }
+  .login-input {
+      border: 1px solid black;
+      padding: 12px;
+      border-radius: 25px;
+      width: 44%;
+      text-align: center;
+  }
+  .login-form:focus {
+      outline: none;
+  }
+  .login-form input::-webkit-input-placeholder {
+      opacity: 1;
+      transition: opacity 0.25s ease-out;
+  }
+  .login-form input:hover::-webkit-input-placeholder,
+  .login-form input:focus::-webkit-input-placeholder {
+      opacity: 0;
+  }
+  .login-button {
+      border-radius: 25px;
+      width: 66%;
+      height: 40px;
+      font-size: 1.3rem;
+      color: white;
+      font-weight: 700;
+      background: linear-gradient(90deg, rgb(255, 161, 46) 0%, rgb(255, 115, 63) 100%);
+      border: 0px;
+      cursor: pointer;
+      transition: opacity 0.25s ease-out;
+      margin-top: 25px;
+  }
+  .message {
+      margin: 15px 0 0;
+      color: #B3B3B3;
+      font-size: 12px;
+      padding-top: 10px;
+  }
+  .message a {
+      text-decoration: none;
+  }
+}

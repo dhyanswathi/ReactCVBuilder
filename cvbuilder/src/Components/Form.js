@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProfileImage from "./ProfileImage";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
+import Headerform from "./Headerform";
 import "./ProfileImage.css";
 
 function Form() {
@@ -41,6 +42,7 @@ function Form() {
   }
   return (
     <div>
+      <Headerform></Headerform>
       <section id="myform">
         <h2 id="title">Form</h2>
         <form className="row">

@@ -2,6 +2,7 @@ import React from 'react';
 import './Welcome.css';
 import picture from '../Pictures/pic2.webp';
 import Header from './Header';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function Welcome() {
@@ -19,7 +20,9 @@ function Welcome() {
                         You CV is the first contact between you and your potential employer.
                         Keep it simple and within one page if posible.
                     </p>
-                    <button className='welcome-btn'>Build your CV</button>
+                    <Link to="/Signup">
+                        <button className='welcome-btn'>Build your CV</button>
+                    </Link>
                 </section>
 
                 <section className='welcome-pic'>
