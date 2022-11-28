@@ -1,5 +1,5 @@
 import React from 'react';
-import './welcome.css';
+import './Welcome.css';
 import { Link, Routes, Route } from 'react-router-dom'
 import picture from '../Pictures/pic2.webp'
 import Login from './Login';
