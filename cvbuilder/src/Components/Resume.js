@@ -1,7 +1,5 @@
 import React from "react";
 import './Resume.css';
-import art from '../Pictures/art.jpg'
-import ProfileImage from "./ProfileImage";
 
 function Resume () {
     const name = localStorage.getItem("Name");

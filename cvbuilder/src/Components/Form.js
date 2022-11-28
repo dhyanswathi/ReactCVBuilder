@@ -51,7 +51,7 @@ function Form() {
           <label className="labels">Name</label>
           <br />
           <input
-            type="text"
+            type="text" required='required'
             onChange={handleChangeFor("Name")}
             value={info.Name}
           ></input>
@@ -59,7 +59,7 @@ function Form() {
           <label className="labels">Email</label>
           <br />
           <input
-            type="email"
+            type="email" required='required'
             onChange={handleChangeFor("Email")}
             value={info.Email}
           ></input>
@@ -67,7 +67,7 @@ function Form() {
           <label className="labels">Phone Number</label>
           <br />
           <input
-            type="text"
+            type="text" required='required'
             onChange={handleChangeFor("PhoneNumber")}
             value={info.PhoneNumber}
           ></input>
@@ -85,7 +85,7 @@ function Form() {
           <label className="labels">Summary</label>
           <br />
           <input
-            type="text"
+            type="text" required='required'
             onChange={handleChangeFor("Summary")}
             value={info.Summary}
           ></input>
@@ -93,27 +93,27 @@ function Form() {
 
           <label className="labels">Education</label>
           <br />
-          <textarea onChange={handleChangeFor("Education")}
+          <textarea onChange={handleChangeFor("Education")} required='required'
             value={info.Education} rows="8" cols="100"></textarea>
           <br />
           <label className="labels">Work Experince</label>
           <br />
           <textarea
-            onChange={handleChangeFor("WorkExperince")}
+            onChange={handleChangeFor("WorkExperince")} required='required'
             value={info.WorkExperince} rows="8" cols="100"
           ></textarea>
           <br />
-          <label className="labels">Technical Skills</label>
+          <label className="labels">Skills</label>
           <br />
           <textarea
-            onChange={handleChangeFor("TechnicalSkills")}
+            onChange={handleChangeFor("TechnicalSkills")} required='required'
             value={info.TechnicalSkills} rows="8" cols="100"
           ></textarea>
           <br />
           <label className="labels">Languages</label>
           <br />
           <textarea
-            onChange={handleChangeFor("Languages")}
+            onChange={handleChangeFor("Languages")} required='required'
             value={info.Languages} rows="6" cols="100"
           ></textarea>
           <br />
