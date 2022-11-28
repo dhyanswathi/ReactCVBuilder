@@ -6,10 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import Form from './Components/Form';
 import SignUp from './Components/Signup';
-import Header from './Components/Header';
+// import Header from './Components/Header';
 import Welcome from './Components/Welcome';
 import Login from './Components/Login';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import Resume from './Components/Resume';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +18,6 @@ root.render(
   
   <React.StrictMode>
     <Router>
-      <Header></Header>
       <Routes>
         <Route exact path="/" element={<App/>} />
         <Route path="/SignUp" element={<SignUp/>} />
@@ -28,7 +27,6 @@ root.render(
         <Route path="/Resume" element={<Resume/>} />
       </Routes>
     </Router>
-    <Footer></Footer>
   </React.StrictMode>
 );
 
