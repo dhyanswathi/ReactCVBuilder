@@ -12,7 +12,6 @@ function SignUp() {
     const [ password, setPassword] = useState('');
 
     let navigate = useNavigate();
-
     const postData = (e) => {
       e.preventDefault();
         axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
@@ -60,8 +59,7 @@ function SignUp() {
         onClick={postData}>Sign Up</button>
       </form>
       </section>
-      <Footer></Footer>
-        </>
+      <Footer></Footer></>
     )
     
 }
