@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
-
+* {
+  box-sizing: border-box;  
+  font-family: "Courier New", Courier, monospace;
+  
+}
 body{
   background: rgb(247, 138, 61);
-  background: linear-gradient(135deg, rgb(243, 119, 57) 0%,     rgb(233, 197, 176) 100%); 
+  background: linear-gradient(135deg, rgb(250, 208, 169) 0%,     rgb(233, 197, 176) 100%); 
   font-family: "work sans";
 }
 html{
@@ -10,8 +13,9 @@ html{
   }
 
   #title{
+    
     text-align: center;
-    font-family: 'open sans', sans-serif;
+    font-family: "Courier New", Courier, monospace;
     padding: 2rem 0;
     margin: 0;
     font-size: 2rem;
