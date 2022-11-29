@@ -11,7 +11,7 @@ function Welcome() {
             <Header></Header>
             <h3 className='h3-welcome'>Welcome to the Resume Builder</h3>
 
-            <div className='welcome'>
+            <div className='welcome'> 
                 <section>
                     <h5 className='h5-welcome'>Build Your Resume For Free</h5>
                     <p className='p-welcome'> As having a strong CV is one of the most import things for job hunting our idea emerged.

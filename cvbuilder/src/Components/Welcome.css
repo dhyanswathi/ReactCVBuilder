@@ -20,7 +20,7 @@
     transition: all 0.3 ease;
     cursor: pointer;
     margin-bottom: 45px;
-    margin-left: 19px;
+    margin-left: 126px;
 }
 
 Link {
@@ -57,7 +57,7 @@ Link {
     font-weight: 850;
     font-style: italic;
     text-align: center;
-    display: inherit;
+    display: inherit; 
     margin: -1px 0;
     display: none;
 }
@@ -85,7 +85,7 @@ Link {
         transition: all 0.3 ease;
         cursor: pointer;
         margin-bottom: 45px;
-        margin-left: 50px;
+        margin-left: 265px;
     }
 
     .welcome button:hover,

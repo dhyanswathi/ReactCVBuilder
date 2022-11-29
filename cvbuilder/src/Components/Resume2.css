@@ -1,0 +1,46 @@
+#resume2 {
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 60%;
+}
+
+.h1-resume2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+}
+
+.info2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.resume2-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0;
+}
+
+.image2 {
+    width: 90px;
+    height: 85px;
+    border-radius: 600px;
+    margin-left: -100px;
+}
+
+.section1 {
+    margin-left: 100px;
+}
+
+.section2 {
+    margin-right: 100px;
+}
+
+.resume2-content3 {
+    margin-top: 0px;
+} 
