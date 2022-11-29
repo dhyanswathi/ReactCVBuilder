@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ProfileImage from "./ProfileImage";
+// import ProfileImage from "./ProfileImage";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
 import Headerform from "./Headerform";
-import "./ProfileImage.css";
+// import "./ProfileImage.css";
 
 
 function Form() {
@@ -12,7 +12,7 @@ function Form() {
     Email: "",
     PhoneNumber: "",
     LinkedIn: "",
-    Summary: "",
+    Summary: "", 
     Education: "",
     WorkExperince: "",
     TechnicalSkills: "",
@@ -39,15 +39,15 @@ function Form() {
     localStorage.setItem("TechnicalSkills", info.TechnicalSkills.replace(/\r?\n/g, '<br />'));
     localStorage.setItem("Languages", info.Languages.replace(/\r?\n/g, '<br />'));
     localStorage.setItem("Certificates", info.Certificates.replace(/\r?\n/g, '<br />'));
-    navigate("/Resume");
+    navigate("/Templates");
   }
   return (
     <div>
       <Headerform></Headerform>
       <section id="myform">
         <h2 id="title">Form</h2>
-        <form className="row">
-          <ProfileImage></ProfileImage>
+        <form className="row"> 
+          {/* <ProfileImage onChange={handleChangeFor("ProfileImage")}></ProfileImage> */}
           <label className="labels">Name</label>
           <br />
           <input

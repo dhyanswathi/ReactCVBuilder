@@ -8,7 +8,7 @@ function About() {
         <p className="about">
             Resume builder app
         </p>
-        </>
+        </> 
     )
 
 }

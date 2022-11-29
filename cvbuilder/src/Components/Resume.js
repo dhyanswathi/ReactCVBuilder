@@ -12,7 +12,6 @@ function Resume () {
     const technicalSkills = localStorage.getItem("TechnicalSkills");
     const languages = localStorage.getItem("Languages");
     const certificates = localStorage.getItem("Certificates");
-
     function printpage() {
         
         var printButton = document.getElementById("printpagebutton");
@@ -22,7 +21,6 @@ function Resume () {
         window.print()
         printButton.style.visibility = 'visible';
     }
-
     return (
         <section id="resume">
              <style>
@@ -31,7 +29,7 @@ function Resume () {
     max-width: 100%;
   }}`}
           </style>
-            <h1>{name}</h1>
+            <h1 className="resume-heading">{name}</h1>
             <article className="info">
                 <span>{email}</span><br />
                 <span>{phoneNumber}</span><br />
@@ -52,10 +50,8 @@ function Resume () {
                 <p dangerouslySetInnerHTML={{ __html: certificates }}/></div>
             </section>
             <button id="printpagebutton" onClick={printpage}>PRINT</button>
-
         </section>
     )
 }
-
 
 export default Resume;
