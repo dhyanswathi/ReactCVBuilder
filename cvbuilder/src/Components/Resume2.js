@@ -30,7 +30,7 @@ function Resume2() {
     max-width: 100%;
   }}`}
             </style>
-            <h1>{name}</h1>
+            <h1 className="h1-resume2">{name}</h1>
             <article className="info">
                 <section className="section1">
                     <img className="image" alt="" src={image}></img>

@@ -8,4 +8,7 @@
 .footer-p{
     text-align: center;
     color: whitesmoke;
+    margin: 10px;
+    font-size: medium;
+    font-weight: 100;
 }
