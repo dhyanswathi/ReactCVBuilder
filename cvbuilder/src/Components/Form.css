@@ -1,93 +1,124 @@
-/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:600%7CWork+Sans:400,500,600,700&display=swap');
-
-body{
-  font-family: "work sans";
+#form-title {
+  text-align: center;
+  font-family: 'open sans', sans-serif;
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: black;
+  margin-top: 50px;
+  margin-left: 10px;
 }
-html{
-    font-size: 90%;
-  }
 
+.form-article {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*1fr 1fr*/
+  align-items: center;
+  justify-content: space-between;
+}
 
-  #title{
+.form-section1 {
+  margin-left: 40px;
+  margin-top: 0px;
+}
+
+.form-section2 {
+  margin-left: 10px;
+}
+
+.form-input {
+  margin: 12px 10px;
+  border: 1px solid black;
+  padding: 8px 5px;
+  border-radius: 25px;
+  width: 75%;
+}
+
+.labels1 {
+  margin-left: 35px;
+}
+
+.labels2 {
+  margin-left: 120px;
+}
+
+.form-textarea {
+  height: 4em;
+  width: 26em;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+#form-btn {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-left: 130px;
+  background-color: #FF7961;
+  color: white;
+}
+
+@media screen and (min-width: 501px) {
+  #form-title {
     text-align: center;
     font-family: 'open sans', sans-serif;
     padding: 2rem 0;
-    margin: 0;
     font-size: 2rem;
-    color:rgb(243, 119, 57);
+    color: black;
+    margin-top: 50px;
+    margin-left: 10px;
   }
-  
-  #myform{
-    max-width: 500px;
-    min-width: 650px;
-    max-height: 9000px;
-    width: 30%;
-    height: 60%;
-    margin: 80px auto;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    padding-bottom: 30px;
-  }
-  .row{
-    display: flex;
-    flex-direction: column;
+
+  .form-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    padding-top: 2rem;
-    max-width: 100%;
-    
+    justify-content: space-between;
   }
-  
-  .row input{
-    width: 80%;
-    box-sizing: border-box;
-    border: none;
-    font-size: 1.3rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
-    transition: box-shadow 0.2s ease-in;
+
+  .form-section1 {
+    margin-left: 280px;
+    margin-top: -540px;
   }
-  
-  .row input:focus{
-     box-shadow: inset 0px -3px 0px 0px rgba(34,193,195,0.7);
-     outline: none;
-  }
-  
-  .row input::-webkit-input-placeholder{
-    opacity: 1;
-    transition: opacity 0.25s ease-out;
-  }
-  
-  .row input:hover::-webkit-input-placeholder,
-  .row input:focus::-webkit-input-placeholder{
-    opacity: 0;
-  }
-  
-  .row label{
-    align-self: start;
-    padding-left: 4.5rem;
-    padding-bottom: 0.5rem;
-    color: rgba(15, 93, 27, 0.9);
-  }
-  .row button{
+
+  .form-input {
+    margin: 12px 10px;
+    border: 1px solid black;
+    padding: 8px 5px;
     border-radius: 25px;
-    width: 80%;
-    height: 40px;
-    font-size: 1.3rem;
+    width: 60%;
+  }
+
+  .labels1{
+    margin-left: 35px;
+  }
+  .labels2{
+    margin-left: 200px;
+  }
+
+  .form-textarea {
+    height: 8em;
+    width: 40em;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  #form-btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    margin-left: 470px;
+    background-color: #FF7961;
     color: white;
-    font-weight: 700;
-    background: rgb(34,193,195);
-    background: linear-gradient(135deg, rgb(243, 119, 57) 10%,     rgb(233, 197, 176) 100%); 
-    border: 0px;
-    cursor: pointer;
-    transition: opacity 0.25s ease-out;
+    width: 30%;
   }
-  
-  .row button:hover{
-    opacity: 0.8;
-  }
-  
-  #button{
-    padding-bottom: 1.5rem;
-  }
- */
+}

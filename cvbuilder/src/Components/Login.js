@@ -49,7 +49,7 @@ function Login() {
           id="email" type='email' defaultValue={data.email} className='login-input' />
           <label className='login-label'>Password</label><br />
           <input placeholder='password' onChange={(e) => handle(e)} required='required'
-          id='password' defaultValue={data.password} className='login-input'></input>
+          id='password' defaultValue={data.password} type='password' className='login-input'></input>
           <button className='login-button'>Log in</button>
           <p className='message'>
             Don't have an account?

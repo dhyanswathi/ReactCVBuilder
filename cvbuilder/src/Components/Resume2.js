@@ -15,7 +15,7 @@ function Resume2() {
     const certificates = localStorage.getItem("Certificates");
     function printpage() {
 
-        var printButton = document.getElementById("printpagebutton");
+        var printButton = document.getElementById("printpagebutton2");
 
         printButton.style.visibility = 'hidden';
 
@@ -30,10 +30,10 @@ function Resume2() {
     max-width: 100%;
   }}`}
             </style>
-            <h1 className="resume-heading2">{name}</h1>
+            <h1 className="h1-resume2">{name}</h1>
             <article className="info2">
                 <section className="section1">
-                    <img className="image" alt="" src={image}></img>
+                    <img className="image2" alt="" src={image}></img>
                 </section>
                 <section className="section2">
                     <span>{email}</span><br />
@@ -42,16 +42,16 @@ function Resume2() {
                 </section>
             </article>
             <p>{summary}</p>
-            <section className="resume-section">
-                <div className="resume-content1"><h4>Skills</h4>
+            <section className="resume2-section">
+                <div className="resume2-content1"><h4>Skills</h4>
                     <p dangerouslySetInnerHTML={{ __html: technicalSkills }} /></div>
-                <div className="resume-content1"><h4>Education</h4>
+                <div className="resume2-content1"><h4>Education</h4>
                     <p dangerouslySetInnerHTML={{ __html: education }} /></div>
-                <div className="resume-content2"><h4>Languages</h4>
+                <div className="resume2-content2"><h4>Languages</h4>
                     <p dangerouslySetInnerHTML={{ __html: languages }} /></div>
-                <div className="resume-content2"><h4>Experience</h4>
+                <div className="resume2-content2"><h4>Experience</h4>
                     <p dangerouslySetInnerHTML={{ __html: workExperince }} /></div>
-                <div className="resume-content3"><h4>Certificates</h4>
+                <div className="resume2-content3"><h4>Certificates</h4>
                     <p dangerouslySetInnerHTML={{ __html: certificates }} /></div>
             </section>
             <button id="printpagebutton2" onClick={printpage}>PRINT</button>
