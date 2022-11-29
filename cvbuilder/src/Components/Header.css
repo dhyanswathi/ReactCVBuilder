@@ -15,6 +15,15 @@
   font-weight: 100;
 }
 
+.topnav span {
+  color: white;
+  text-align: center;
+  padding: 10px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 100;
+}
+
 .topnav a:hover {
   color: rgb(61, 61, 61);
   transform: scale(1.2);
@@ -27,6 +36,10 @@
 
 .nav-right {
   float: right;
+}
+
+.hide-links {
+  display: none;
 }
 
 @media screen and (min-width: 501px) {

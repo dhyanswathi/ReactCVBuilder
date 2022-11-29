@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect,  } from "react";
 // import ProfileImage from "./ProfileImage";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
@@ -19,6 +19,13 @@ function Form() {
   };
   const [info, setInfo] = useState(initialContact);
   let navigate = useNavigate();
+
+  useEffect(() => {
+    const username = localStorage.getItem('username');
+    if(!username) {
+      navigate('/login');
+    }
+  });
 
   const handleChangeFor = (propertyName) => (event) => {
     setInfo((info) => ({

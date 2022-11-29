@@ -21,6 +21,7 @@ function Login() {
       password: data.password,
       validateStatus: function(status) {
         if(status === 200){
+          localStorage.setItem("username", data.email);
           navigate('/form');
         }
         else if(status === 404)
@@ -48,7 +49,7 @@ function Login() {
           <input placeholder='email' onChange={(e) => handle(e)} required='required'
           id="email" type='email' defaultValue={data.email} className='login-input' />
           <label className='login-label'>Password</label><br />
-          <input placeholder='password' onChange={(e) => handle(e)} required='required'
+          <input placeholder='password' type='password' onChange={(e) => handle(e)} required='required'
           id='password' defaultValue={data.password} className='login-input'></input>
           <button className='login-button'>Log in</button>
           <p className='message'>
