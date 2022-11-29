@@ -1,0 +1,28 @@
+#resume3 {
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 60%;
+  }
+
+.template-heading3 {
+    background-color: rgb(25, 137, 102);
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.template-section3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.template-content3 {
+    font-size: 18px;
+}
+
+.template-content3 h4 {
+ color: rgb(25, 137, 102);
+}
