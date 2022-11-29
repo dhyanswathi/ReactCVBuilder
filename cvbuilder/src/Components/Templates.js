@@ -10,12 +10,15 @@ function Templates() {
         <><Headerform></Headerform>
         <div className="template">
         <h1 className="template-heading">Please select a template for your resume</h1>
+        <section>
         <Link to="/Resume">
-        <img src={Template1} alt="welcome pic"/>
+        <img className="template-pics" src={Template1} alt="welcome pic"/>
                     </Link>
         <Link to="/Resume2">
-        <img src={Template2} alt="welcome pic" />
-        </Link></div>
+        <img className="template-pics" src={Template2} alt="welcome pic" />
+        </Link>
+        </section>
+        </div>
         </>
     )
 
