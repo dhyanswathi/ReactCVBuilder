@@ -1,5 +1,6 @@
 import React from "react";
 import './Resume.css';
+
 function Resume () {
     const name = localStorage.getItem("Name");
     const email = localStorage.getItem("Email");
@@ -28,7 +29,7 @@ function Resume () {
     max-width: 100%;
   }}`}
           </style>
-            <h1>{name}</h1>
+            <h1 className="resume-heading">{name}</h1>
             <article className="info">
                 <span>{email}</span><br />
                 <span>{phoneNumber}</span><br />
@@ -52,4 +53,5 @@ function Resume () {
         </section>
     )
 }
+
 export default Resume;
