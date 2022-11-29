@@ -11,9 +11,5 @@
 }
 
 .template-pics:hover {
-    width: 220px;
-    height: 330px;
-    padding: 0;
-    border: 1px rgba(144, 65, 5, 0.113) solid;
-    opacity: .8;
+    transform: scale(1.2);
 }

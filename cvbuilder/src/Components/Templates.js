@@ -17,6 +17,9 @@ function Templates() {
         <Link to="/Resume2">
         <img className="template-pics" src={Template2} alt="welcome pic" />
         </Link>
+        <Link to="/Resume3">
+        <img className="template-pics" src={Template1} alt="welcome pic" />
+        </Link>
         </section>
         </div>
         </>

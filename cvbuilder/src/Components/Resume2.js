@@ -23,15 +23,15 @@ function Resume2() {
         printButton.style.visibility = 'visible';
     }
     return (
-        <section id="resume">
+        <section id="resume2">
             <style>
-                {`@media print {#resume {
+                {`@media print {#resume2 {
     margin: auto;
     max-width: 100%;
   }}`}
             </style>
-            <h1>{name}</h1>
-            <article className="info">
+            <h1 className="resume-heading2">{name}</h1>
+            <article className="info2">
                 <section className="section1">
                     <img className="image" alt="" src={image}></img>
                 </section>
@@ -54,7 +54,7 @@ function Resume2() {
                 <div className="resume-content3"><h4>Certificates</h4>
                     <p dangerouslySetInnerHTML={{ __html: certificates }} /></div>
             </section>
-            <button id="printpagebutton" onClick={printpage}>PRINT</button>
+            <button id="printpagebutton2" onClick={printpage}>PRINT</button>
         </section>
     )
 }
