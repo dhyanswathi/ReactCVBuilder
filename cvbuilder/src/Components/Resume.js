@@ -1,8 +1,5 @@
 import React from "react";
 import './Resume.css';
-import art from '../Pictures/art.jpg'
-import ProfileImage from "./ProfileImage";
-
 function Resume () {
     const name = localStorage.getItem("Name");
     const email = localStorage.getItem("Email");
@@ -14,7 +11,6 @@ function Resume () {
     const technicalSkills = localStorage.getItem("TechnicalSkills");
     const languages = localStorage.getItem("Languages");
     const certificates = localStorage.getItem("Certificates");
-
     function printpage() {
         
         var printButton = document.getElementById("printpagebutton");
@@ -24,7 +20,6 @@ function Resume () {
         window.print()
         printButton.style.visibility = 'visible';
     }
-
     return (
         <section id="resume">
              <style>
@@ -41,21 +36,20 @@ function Resume () {
             </article>
             {/* <aside><img className="image" src={art}></img></aside> */}
             <p>{summary}</p>
-            <h4>Education</h4>
-            <p dangerouslySetInnerHTML={{ __html: education }} />
-            <h4>Experience</h4>
-            <p dangerouslySetInnerHTML={{ __html: workExperince }}/>
-            <h4>Skills</h4>
-            <p dangerouslySetInnerHTML={{ __html: technicalSkills }}/>
-            <h4>Languages</h4>
-            <p dangerouslySetInnerHTML={{ __html: languages }}/>
-            <h4>Certificates</h4>
-            <p dangerouslySetInnerHTML={{ __html: certificates }}/>
-            <button id="printpagebutton" onClick={printpage}>PREVIEW</button>
-
+            <section className="resume-section">
+            <div className="resume-content"><h4>Skills</h4>
+                <p dangerouslySetInnerHTML={{ __html: technicalSkills }}/></div>
+                <div className="resume-content"><h4>Education</h4>
+                <p dangerouslySetInnerHTML={{ __html: education }} /></div>
+                <div className="resume-content"><h4>Languages</h4>
+                <p dangerouslySetInnerHTML={{ __html: languages }}/></div>
+                <div className="resume-content"><h4>Experience</h4>
+                <p dangerouslySetInnerHTML={{ __html: workExperince }}/></div>
+                <div className="resume-content"><h4>Certificates</h4>
+                <p dangerouslySetInnerHTML={{ __html: certificates }}/></div>
+            </section>
+            <button id="printpagebutton" onClick={printpage}>PRINT</button>
         </section>
     )
 }
-
-
 export default Resume;

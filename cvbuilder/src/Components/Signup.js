@@ -41,7 +41,7 @@ function SignUp() {
       <form id='user-inputs'className='row'>
         <label className='labels'>First Name</label><br/>
         <input required className='input-fields' type="text"
-        onChange={(e) => setFirstName(e.target.value)}></input><br/>
+        onChange={(e) => setFirstName(e.target.value)}></input><br/> 
 
         <label className='labels'>Last Name</label><br/>
         <input className='input-fields' type="text" aria-required='true' 

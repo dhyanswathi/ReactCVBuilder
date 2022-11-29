@@ -11,6 +11,7 @@ import Login from './Components/Login';
 // import Footer from './Components/Footer';
 import Resume from './Components/Resume';
 import About from './Components/About';
+import Resume2 from './Components/Resume2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -26,6 +27,7 @@ root.render(
         <Route path="/Login" element={<Login/>} />
         <Route path="/Form" element={<Form/>} />
         <Route path="/Resume" element={<Resume/>} />
+        <Route path="/Resume2" element={<Resume2/>} />
       </Routes>
     </Router>
   </React.StrictMode>
