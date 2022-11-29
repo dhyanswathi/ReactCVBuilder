@@ -39,7 +39,7 @@ function Form() {
     localStorage.setItem("TechnicalSkills", info.TechnicalSkills.replace(/\r?\n/g, '<br />'));
     localStorage.setItem("Languages", info.Languages.replace(/\r?\n/g, '<br />'));
     localStorage.setItem("Certificates", info.Certificates.replace(/\r?\n/g, '<br />'));
-    navigate("/Resume");
+    navigate("/Templates");
   }
   return (
     <div>

@@ -31,7 +31,7 @@ function Resume () {
     max-width: 100%;
   }}`}
           </style>
-            <h1>{name}</h1>
+            <h1 className="resume-heading">{name}</h1>
             <article className="info">
                 <span>{email}</span><br />
                 <span>{phoneNumber}</span><br />

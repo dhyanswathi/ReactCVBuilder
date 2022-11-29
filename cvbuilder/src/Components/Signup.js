@@ -21,11 +21,11 @@ function SignUp() {
           password: password,
           validateStatus: function(status) {
             if(status === 201){
-              navigate('/Form');
+              navigate('/form');
             }
-            if (status === 500)
+            else if(status >= 400)
             {
-              alert('The user already exists');
+              console.log('wrong user or pass')
             }
           }
         });
