@@ -16,6 +16,8 @@ function Form() {
     Education: "",
     WorkExperince: "",
     TechnicalSkills: "",
+    Languages: "",
+    Certificates: ""
   };
   const [info, setInfo] = useState(initialContact);
   let navigate = useNavigate();
