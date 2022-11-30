@@ -6,7 +6,7 @@ body {
 
 .signup-main {
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 #signupform {
@@ -44,7 +44,8 @@ body {
   border-radius: 25px;
   font-size: 1.3rem;
   padding-left: 1.5rem;
-  padding-bottom: 1rem;
+  padding: 8px;
+  text-align: center;
 }
 
 .row button {
@@ -104,7 +105,7 @@ body {
       border-radius: 25px;
       font-size: 1.3rem;
       padding-left: 1.5rem;
-      padding-bottom: 1rem;
+      
     }
 
     .row button {

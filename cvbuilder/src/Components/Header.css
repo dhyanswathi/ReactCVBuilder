@@ -9,18 +9,18 @@
 .topnav a {
   color: white;
   text-align: center;
-  padding: 8px 8px;
+  padding: 15px 4px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 100;
 }
 
 .topnav span {
   color: white;
   text-align: center;
-  padding: 10px 8px;
+  padding: 15px 8px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 100;
 }
 
@@ -55,6 +55,15 @@
     color: white;
     text-align: center;
     padding: 12px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .topnav span {
+    color: white;
+    text-align: center;
+    padding: 12px 8px;
     text-decoration: none;
     font-size: 20px;
     font-weight: 100;
