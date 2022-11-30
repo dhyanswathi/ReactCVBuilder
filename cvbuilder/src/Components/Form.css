@@ -14,7 +14,7 @@
 
 .form-row label {
   font-size: 20px;
-  color: #883b2d;
+  color: #652c20;
 }
 
 .form-article {
@@ -42,12 +42,8 @@
   width: 75%;
 }
 
-.labels1 {
+.labels1, .labels2 {
   margin-left: 35px;
-}
-
-.labels2 {
-  margin-left: 120px;
 }
 
 .form-textarea {
@@ -101,11 +97,8 @@ textarea {
     width: 60%;
   }
 
-  .labels1{
+  .labels1, .labels2{
     margin-left: 35px;
-  }
-  .labels2{
-    margin-left: 200px;
   }
 
   .form-textarea {

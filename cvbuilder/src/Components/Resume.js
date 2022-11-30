@@ -1,7 +1,13 @@
 import React from "react";
 import './Resume.css';
+import { useNavigate } from 'react-router-dom';
 
 function Resume () {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/Templates");
+    };
+
     const name = localStorage.getItem("Name");
     const email = localStorage.getItem("Email");
     const phoneNumber = localStorage.getItem("PhoneNumber");
@@ -12,15 +18,17 @@ function Resume () {
     const technicalSkills = localStorage.getItem("TechnicalSkills");
     const languages = localStorage.getItem("Languages");
     const certificates = localStorage.getItem("Certificates");
-    function printpage() {
-        
-        var printButton = document.getElementById("printpagebutton");
     
+    function printpage() {
+        var printButton = document.getElementById("printpagebutton");
+        var backButton = document.getElementById("gobackbutton");
         printButton.style.visibility = 'hidden';
-        
+        backButton.style.visibility = 'hidden';
         window.print()
         printButton.style.visibility = 'visible';
+        backButton.style.visibility = 'visible';
     }
+
     return (
         <section id="resume">
              <style>
@@ -49,6 +57,7 @@ function Resume () {
                 <p dangerouslySetInnerHTML={{ __html: certificates }}/></div>
             </section>
             <button id="printpagebutton" onClick={printpage}>PRINT</button>
+            <button id="gobackbutton" className='temp-btn' onClick={handleClick}>Go Back To Previous Section</button>
         </section>
     )
 }

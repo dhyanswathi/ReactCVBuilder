@@ -3,7 +3,7 @@
 }
 
 .about {
-    margin: 200px;
+    margin: 80px 10px;
     font-family: 'Courier New', Courier, monospace;
     border: 5px tomato solid;
     padding: 30px;
@@ -12,3 +12,23 @@
 .about p {
     font-size: 20px;
 } 
+
+@media screen and (min-width: 501px) {
+    .about {
+        margin: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        border: 5px tomato solid;
+        padding: 30px;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .about {
+        margin: 200px;
+        font-family: 'Courier New', Courier, monospace;
+        border: 5px tomato solid;
+        padding: 30px;
+    }
+    
+}
