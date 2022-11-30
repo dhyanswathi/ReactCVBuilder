@@ -1,7 +1,13 @@
 import React from "react";
 import './Resume3.css';
+import { useNavigate } from 'react-router-dom';
 
 function Resume3 () {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate("/Templates");
+    };
+
     const name = localStorage.getItem("Name").toUpperCase();
     const email = localStorage.getItem("Email");
     const phoneNumber = localStorage.getItem("PhoneNumber");
@@ -15,11 +21,12 @@ function Resume3 () {
     function printpage() {
         
         var printButton = document.getElementById("printpagebutton3");
-    
+        var backButton = document.getElementById("gobackbutton3");
         printButton.style.visibility = 'hidden';
-        
+        backButton.style.visibility = 'hidden';
         window.print()
         printButton.style.visibility = 'visible';
+        backButton.style.visibility = 'visible';
     }
     return (
         <section id="resume3">
@@ -52,6 +59,7 @@ function Resume3 () {
                 <p dangerouslySetInnerHTML={{ __html: certificates }}/></div>
             </section>
             <button id="printpagebutton3" onClick={printpage}>PRINT</button>
+            <button id="gobackbutton3" className='temp-btn' onClick={handleClick}>Go Back To Previous Section</button>
         </section>
     )
 }

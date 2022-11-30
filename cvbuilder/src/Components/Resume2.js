@@ -63,7 +63,7 @@ function Resume2() {
                     <p dangerouslySetInnerHTML={{ __html: certificates }} /></div>
             </section>
             <button id="printpagebutton2" onClick={printpage}>PRINT</button>
-            <button id="gobackbutton2" onClick={handleClick}>Go Back To Previous Section</button>
+            <button id="gobackbutton2" className='temp-btn' onClick={handleClick}>Go Back To Previous Section</button>
         </section>
     )
 }

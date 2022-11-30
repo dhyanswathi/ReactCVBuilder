@@ -6,7 +6,7 @@ const Headerform = () => {
     let navigate = useNavigate();
     const onLinkClick = (e) => {
         e.preventDefault();
-        localStorage.setItem("username", '');
+        localStorage.clear();
         navigate('/');
     };
 

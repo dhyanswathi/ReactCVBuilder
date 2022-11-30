@@ -5,6 +5,10 @@
     justify-content: center;
 }
 
+.welcome-main{
+    padding-top: 50px;
+}
+
 .welcome-btn {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;

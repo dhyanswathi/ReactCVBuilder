@@ -2,10 +2,11 @@ import React from "react";
 import Header from "./Header";
 import './About.css';
 import Footer from "./Footer";
+import floortile from '../Pictures/floortile.png';
 
 function About() {
     return (
-        <><Header></Header>
+        <div className="homepage" style={{ backgroundImage: `url(${floortile})` }}><Header></Header>
         <article className="about">
             <h1>Did you know?</h1>
             <p>Every time you apply for a new job, you should make sure the resume 
@@ -23,7 +24,7 @@ function About() {
              and cover letter that gets you hired faster.</p>
         </article>
         <Footer></Footer>
-        </> 
+        </div> 
     )
 
 }

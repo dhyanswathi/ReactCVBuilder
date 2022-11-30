@@ -52,7 +52,20 @@
     margin-top: 25px;
 }
 
-#printpagebutton:hover {
+#gobackbutton {
+  border-radius: 25px;
+    width: 50%;
+    height: 50px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgb(255, 124, 101) 0%, rgb(255, 102, 46) 100%);
+    border: 0px;
+    cursor: pointer;
+ 
+}
+
+#printpagebutton:hover, #gobackbutton:hover {
   opacity: .7;
 }
 

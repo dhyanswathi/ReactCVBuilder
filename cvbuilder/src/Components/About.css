@@ -1,3 +1,8 @@
+.homepage {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
 .about h1 {
     font-family: 'Courier New', Courier, monospace;
 }
