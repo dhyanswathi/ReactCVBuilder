@@ -49,9 +49,9 @@ function Form() {
     navigate("/Templates");
   }
   return (
-    <div>
+    <div className="form-div">
       <Headerform></Headerform>
-      <h2 id="form-title">Enter your details here...</h2>
+      <h2 className="form-title">Enter your details here...</h2>
       <form className="form-row">
         <article className="form-article">
           <section className="form-section1">
@@ -100,18 +100,31 @@ function Form() {
               value={info.Summary}
             ></textarea>
             <br/>
+
             <label className="labels2">Education</label>
             <br />
-            <textarea onChange={handleChangeFor("Education")} required='required' className="form-textarea"
+            <textarea onChange={handleChangeFor("Education")} required='required'
+              className="form-textarea"
               value={info.Education} rows="8" cols="100"></textarea>
-            <br />
-            <label className="labels2">Work Experince</label>
-            <br />
+            <br /></section>
+
+            <section className="form-section3">
+            <label className="labels2">Work Experince</label><br />
             <textarea className="form-textarea"
               onChange={handleChangeFor("WorkExperince")} required='required'
               value={info.WorkExperince} rows="8" cols="100"
             ></textarea>
             <br />
+            
+            <label className="labels2">Languages</label>
+            <br />
+            <textarea className="form-textarea"
+              onChange={handleChangeFor("Languages")} required='required'
+              value={info.Languages} rows="6" cols="100"
+            ></textarea>
+            <br /></section>
+
+            <section className="form-section4">
             <label className="labels2">Skills</label>
             <br />
             <textarea className="form-textarea"
@@ -119,19 +132,14 @@ function Form() {
               value={info.TechnicalSkills} rows="8" cols="100"
             ></textarea>
             <br />
-            <label className="labels2">Languages</label>
-            <br />
-            <textarea className="form-textarea"
-              onChange={handleChangeFor("Languages")} required='required'
-              value={info.Languages} rows="6" cols="100"
-            ></textarea>
-            <br />
+
             <label className="labels2">Certificates</label>
             <br />
             <textarea className="form-textarea"
               onChange={handleChangeFor("Certificates")}
               value={info.Certificates} rows="4" cols="100"
             ></textarea>
+
           </section>
         </article>
         <button variant="primary" type="submit" id="form-btn"

@@ -2,6 +2,10 @@
     margin: 100px;
 }
 
+.template-heading {
+    font-size: 50px;
+}
+
 .template-pics {
     width: 200px;
     height: 300px;

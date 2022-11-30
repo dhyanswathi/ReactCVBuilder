@@ -39,4 +39,20 @@
   font-size: 30px;
 }
 
+#printpagebutton {
+  border-radius: 25px;
+    width: 20%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgb(255, 124, 101) 0%, rgb(255, 102, 46) 100%);
+    border: 0px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+#printpagebutton:hover {
+  opacity: .7;
+}
 
