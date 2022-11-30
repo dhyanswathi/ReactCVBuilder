@@ -60,11 +60,11 @@ const handleInput = (event) => {
     localStorage.setItem('PhoneNumber', info.PhoneNumber);
     localStorage.setItem("LinkedIn", info.LinkedIn);
     localStorage.setItem("Summary", info.Summary);
-    localStorage.setItem("Education", info.Education.replace(/\r?\n/g, '<br />'));
-    localStorage.setItem("WorkExperince", info.WorkExperince.replace(/\r?\n/g, '<br />'));
-    localStorage.setItem("TechnicalSkills", info.TechnicalSkills.replace(/\r?\n/g, '<br />'));
-    localStorage.setItem("Languages", info.Languages.replace(/\r?\n/g, '<br />'));
-    localStorage.setItem("Certificates", info.Certificates.replace(/\r?\n/g, '<br />'));
+    localStorage.setItem("Education", info.Education);
+    localStorage.setItem("WorkExperince", info.WorkExperince);
+    localStorage.setItem("TechnicalSkills", info.TechnicalSkills);
+    localStorage.setItem("Languages", info.Languages);
+    localStorage.setItem("Certificates", info.Certificates);
     navigate("/Templates");
   }
   return (
