@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect,  } from "react";
 // import ProfileImage from "./ProfileImage";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
@@ -19,6 +19,13 @@ function Form() {
   };
   const [info, setInfo] = useState(initialContact);
   let navigate = useNavigate();
+
+  useEffect(() => {
+    const username = localStorage.getItem('username');
+    if(!username) {
+      navigate('/login');
+    }
+  });
 
   const handleChangeFor = (propertyName) => (event) => {
     setInfo((info) => ({
@@ -44,7 +51,7 @@ function Form() {
   return (
     <div>
       <Headerform></Headerform>
-      <h2 id="form-title">Form</h2>
+      <h2 id="form-title">Enter your details here...</h2>
       <form className="form-row">
         <article className="form-article">
           <section className="form-section1">

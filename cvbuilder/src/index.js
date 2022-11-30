@@ -13,6 +13,7 @@ import Resume from './Components/Resume';
 import About from './Components/About';
 import Resume2 from './Components/Resume2';
 import Resume3 from './Components/Resume3';
+import Resume4 from './Components/Resume4';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,6 +33,7 @@ root.render(
         <Route path="/Templates" element={<Templates/>} />
         <Route path="/Resume2" element={<Resume2/>} />
         <Route path="/Resume3" element={<Resume3/>} />
+        <Route path="/Resume4" element={<Resume4/>} />
       </Routes>
     </Router>
   </React.StrictMode>

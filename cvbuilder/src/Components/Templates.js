@@ -20,6 +20,9 @@ function Templates() {
         <Link to="/Resume3">
         <img className="template-pics" src={Template1} alt="welcome pic" />
         </Link>
+        <Link to="/Resume4">
+        <img className="template-pics" src={Template1} alt="welcome pic" />
+        </Link>
         </section>
         </div>
         </>

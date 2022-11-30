@@ -14,22 +14,23 @@ function SignUp() {
     let navigate = useNavigate();
     const postData = (e) => {
       e.preventDefault();
-        axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
-          userLoginId: email,
+      axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
+        userLoginId: email,
           firstName: firstName,
           lastName: lastName,
-          password: password,
-          validateStatus: function(status) {
-            if(status === 201){
-              navigate('/form');
-            }
-            else if(status >= 400)
-            {
-              console.log('wrong user or pass')
-            }
-          }
-        });
-        navigate('/Form');
+          password: password
+    }).then(response => {
+      if(response.status === 201){
+        localStorage.setItem("username",email);
+        navigate('/form');
+      }
+      else 
+      {
+        alert('User already exists');
+      }
+    }).catch(error => {
+        console.log(error)
+    });
     }
   
     return ( 
@@ -37,7 +38,7 @@ function SignUp() {
       <Header></Header>
       <section id='signupform'>
         <h2 id='title'>Sign Up</h2>
-      <form id='user-inputs'className='row'>
+      <form id='user-inputs'className='row' onSubmit={postData}>
 
         <label htmlFor='name-first'>First Name</label>
         <input className='name-first' type="text" required='required'
@@ -55,8 +56,7 @@ function SignUp() {
         <input className='password' type="password" required='required'
         onChange={(e) => setPassword(e.target.value)}></input><br/>
 
-        <button variant="primary" type="submit" id='btnAddTodo' 
-        onClick={postData}>Sign Up</button>
+        <button variant="primary" type="submit" id='btnAddTodo'>Sign Up</button>
       </form>
       </section>
       <Footer></Footer></>
