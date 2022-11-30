@@ -1,24 +1,23 @@
 import React, { useState, useEffect,  } from "react";
-// import ProfileImage from "./ProfileImage";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
 import Headerform from "./Headerform";
-// import "./ProfileImage.css";
-
+import floortile from '../Pictures/floortile.png';
 
 function Form() {
   const initialContact = {
-    Name: "",
-    Email: "",
-    PhoneNumber: "",
-    LinkedIn: "",
-    Summary: "",
-    Education: "",
-    WorkExperince: "",
-    TechnicalSkills: "",
-    Languages: "",
-    Certificates: ""
+    Name: localStorage.getItem("Name"),
+    Email: localStorage.getItem("Email"),
+    PhoneNumber: localStorage.getItem("PhoneNumber"),
+    LinkedIn: localStorage.getItem("LinkedIn"),
+    Summary: localStorage.getItem("Summary"),
+    Education: localStorage.getItem("Education"),
+    WorkExperince: localStorage.getItem("WorkExperince"),
+    TechnicalSkills: localStorage.getItem("TechnicalSkills"),
+    Languages: localStorage.getItem("Languages"),
+    Certificates: localStorage.getItem("Certificates")
   };
+
   const [info, setInfo] = useState(initialContact);
   let navigate = useNavigate();
 
@@ -36,6 +35,24 @@ function Form() {
     }));
   };
 
+  let previousLength = 0;
+
+const handleInput = (event) => {
+  const bullet = "\u2022";
+  const newLength = event.target.value.length;
+  const characterCode = event.target.value.substr(-1).charCodeAt(0);
+
+  if (newLength > previousLength) {
+    if (characterCode === 10) {
+      event.target.value = `${event.target.value}${bullet} `;
+    } else if (newLength === 1) {
+      event.target.value = `${bullet} ${event.target.value}`;
+    }
+  }
+  
+  previousLength = newLength;
+}
+
   function onSubmit(e) {
     e.preventDefault();
     localStorage.setItem("Name", info.Name);
@@ -51,7 +68,7 @@ function Form() {
     navigate("/Templates");
   }
   return (
-    <div className="form-div">
+    <div className="form-div" style={{ backgroundImage: `url(${floortile})` }}>
       <Headerform></Headerform>
       <h2 className="form-title">Enter your details here...</h2>
       <form className="form-row">
@@ -105,14 +122,14 @@ function Form() {
 
             <label className="labels2">Education</label>
             <br />
-            <textarea onChange={handleChangeFor("Education")} required='required'
-              className="form-textarea"
+            <textarea onChange={handleChangeFor("Education")} onInput={handleInput} 
+            required='required' className="form-textarea"
               value={info.Education} rows="8" cols="100"></textarea>
             <br /></section>
 
             <section className="form-section3">
             <label className="labels2">Work Experince</label><br />
-            <textarea className="form-textarea"
+            <textarea className="form-textarea" onInput={handleInput} 
               onChange={handleChangeFor("WorkExperince")} required='required'
               value={info.WorkExperince} rows="8" cols="100"
             ></textarea>
@@ -120,7 +137,7 @@ function Form() {
             
             <label className="labels2">Languages</label>
             <br />
-            <textarea className="form-textarea"
+            <textarea className="form-textarea" onInput={handleInput} 
               onChange={handleChangeFor("Languages")} required='required'
               value={info.Languages} rows="6" cols="100"
             ></textarea>
@@ -129,7 +146,7 @@ function Form() {
             <section className="form-section4">
             <label className="labels2">Skills</label>
             <br />
-            <textarea className="form-textarea"
+            <textarea className="form-textarea" onInput={handleInput} 
               onChange={handleChangeFor("TechnicalSkills")} required='required'
               value={info.TechnicalSkills} rows="8" cols="100"
             ></textarea>
@@ -137,7 +154,7 @@ function Form() {
 
             <label className="labels2">Certificates</label>
             <br />
-            <textarea className="form-textarea"
+            <textarea className="form-textarea" onInput={handleInput} 
               onChange={handleChangeFor("Certificates")}
               value={info.Certificates} rows="4" cols="100"
             ></textarea>

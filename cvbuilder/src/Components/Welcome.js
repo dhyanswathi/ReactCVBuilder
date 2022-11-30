@@ -4,10 +4,11 @@ import { Link} from 'react-router-dom'
 import picture from '../Pictures/test.jpg'
 import Header from './Header';
 import Footer from './Footer';
+import floortile from '../Pictures/floortile.png';
 
 function Welcome() {
     return (
-        <div>
+        <div className='welcome-main' style={{ backgroundImage: `url(${floortile})` }}>
             <Header></Header>
             <h3 className='h3-welcome'>Welcome to the Resume Builder</h3>
 

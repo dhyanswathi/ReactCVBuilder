@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import floortile from '../Pictures/floortile.png';
 
 function Login() {
   let navigate = useNavigate();
@@ -40,7 +41,7 @@ function Login() {
   }
 
   return (
-    <div>
+    <div className='login-main' style={{ backgroundImage: `url(${floortile})` }}>
       <Header></Header>
       <section className='login'>
         <h2 className='h2-login'>Login</h2>

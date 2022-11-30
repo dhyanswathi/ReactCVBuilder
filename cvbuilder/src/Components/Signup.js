@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import Header from './Header';
 import Footer from './Footer';
+import floortile from '../Pictures/floortile.png';
 
 function SignUp() {
     const [ firstName, setFirstName ] = useState('');
@@ -34,7 +35,7 @@ function SignUp() {
     }
   
     return ( 
-      <>
+      <div className='signup-main' style={{ backgroundImage: `url(${floortile})` }}>
       <Header></Header>
       <section id='signupform'>
         <h2 id='title'>Sign Up</h2>
@@ -59,7 +60,7 @@ function SignUp() {
         <button variant="primary" type="submit" id='btnAddTodo'>Sign Up</button>
       </form>
       </section>
-      <Footer></Footer></>
+      <Footer></Footer></div>
     )
     
 }

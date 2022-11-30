@@ -10,6 +10,11 @@
     padding-bottom: 20px;
 } 
 
+.login-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .h2-login {
     text-align: center;
     font-family: 'open sans', sans-serif;
