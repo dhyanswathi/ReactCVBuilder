@@ -14,11 +14,11 @@ function Resume2() {
     const phoneNumber = localStorage.getItem("PhoneNumber");
     const linkedIn = localStorage.getItem("LinkedIn");
     const summary = localStorage.getItem("Summary");
-    const education = localStorage.getItem("Education");
-    const workExperince = localStorage.getItem("WorkExperince");
-    const technicalSkills = localStorage.getItem("TechnicalSkills");
-    const languages = localStorage.getItem("Languages");
-    const certificates = localStorage.getItem("Certificates");
+    const education = localStorage.getItem("Education").replace(/\r?\n/g, '<br />');
+    const workExperince = localStorage.getItem("WorkExperince").replace(/\r?\n/g, '<br />');
+    const technicalSkills = localStorage.getItem("TechnicalSkills").replace(/\r?\n/g, '<br />');
+    const languages = localStorage.getItem("Languages").replace(/\r?\n/g, '<br />');
+    const certificates = localStorage.getItem("Certificates").replace(/\r?\n/g, '<br />');
 
     function printpage() {
 
