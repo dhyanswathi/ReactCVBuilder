@@ -1,8 +1,8 @@
 import React from "react";
-import './Resume.css';
+import './Resume4.css';
 
 function Resume4 () {
-    const name = localStorage.getItem("Name");
+    const name = localStorage.getItem("Name").toUpperCase();
     const email = localStorage.getItem("Email");
     const phoneNumber = localStorage.getItem("PhoneNumber");
     const linkedIn = localStorage.getItem("LinkedIn");
@@ -22,7 +22,7 @@ function Resume4 () {
         printButton.style.visibility = 'visible';
     }
     return (
-        <section id="resume4">
+        <section id="resume4" className="cv4">
              <style>
               {`@media print {#resume4 {
     margin: auto;
@@ -35,16 +35,18 @@ function Resume4 () {
                 <span>{phoneNumber}</span><br />
                 <span>{linkedIn}</span><br />
             </article>
+            <h4>SUMMARY</h4>
             <p>{summary}</p>
-            <section className="cv-section">
-            <div className="cv-content"><h4>Skills</h4>
-                <p dangerouslySetInnerHTML={{ __html: technicalSkills }}/></div>
                 <div className="cv-content"><h4>Education</h4>
                 <p dangerouslySetInnerHTML={{ __html: education }} /></div>
-                <div className="cv-content"><h4>Languages</h4>
-                <p dangerouslySetInnerHTML={{ __html: languages }}/></div>
                 <div className="cv-content"><h4>Experience</h4>
                 <p dangerouslySetInnerHTML={{ __html: workExperince }}/></div>
+
+                <section className="cv-section">
+                <div className="cv-content"><h4>Skills</h4>
+                <p dangerouslySetInnerHTML={{ __html: technicalSkills }}/></div>
+                <div className="cv-content"><h4>Languages</h4>
+                <p dangerouslySetInnerHTML={{ __html: languages }}/></div>               
                 <div className="cv-content"><h4>Certificates</h4>
                 <p dangerouslySetInnerHTML={{ __html: certificates }}/></div>
             </section>

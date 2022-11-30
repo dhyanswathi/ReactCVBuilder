@@ -44,3 +44,20 @@
 .resume2-content3 {
     margin-top: 0px;
 } 
+
+#printpagebutton2 {
+    border-radius: 25px;
+      width: 20%;
+      height: 40px;
+      font-size: 1.3rem;
+      color: white;
+      font-weight: 700;
+      background: black;
+      border: 0px;
+      cursor: pointer;
+      margin-top: 25px;
+  }
+  
+  #printpagebutton2:hover {
+    opacity: .7;
+  }

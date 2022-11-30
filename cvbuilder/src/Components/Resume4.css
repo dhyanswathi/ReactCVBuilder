@@ -6,3 +6,42 @@
     max-width: 60%;
   }
 
+.cv-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 5px;
+}
+
+.cv-heading {
+  color: crimson;
+  font-size: 50px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.cv4 h4 {
+  font-size: 30px;
+  background-color: rgb(235, 83, 114);
+  color: rgb(250, 247, 248);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#printpagebutton4 {
+  border-radius: 25px;
+    width: 20%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    background: rgb(235, 83, 114);
+    border: 0px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+#printpagebutton4:hover {
+  opacity: .7;
+}
+
+
