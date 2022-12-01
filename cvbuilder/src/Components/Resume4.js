@@ -49,7 +49,7 @@ function Resume4 () {
                 <div className="cv-content"><h4>Experience</h4>
                 <p dangerouslySetInnerHTML={{ __html: workExperince }}/></div>
 
-                <section className="resume-section">
+                <section className="cv-section">
                 <div className="cv-content"><h4>Skills</h4>
                 <p dangerouslySetInnerHTML={{ __html: technicalSkills }}/></div>
                 <div className="cv-content"><h4>Languages</h4>
