@@ -21,7 +21,7 @@ function Welcome() {
                         Your resume is the first contact between you and your potential employer.
                         Keep it simple and within one page if possible.
                     </p>
-                    <Link to="/Signup">
+                    <Link to="/Login">
                         <button className='welcome-btn'>Build your resume</button>
                     </Link>
                 </section>
