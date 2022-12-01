@@ -15,7 +15,7 @@ function SignUp() {
     let navigate = useNavigate();
     const postData = (e) => {
       e.preventDefault();
-      axios.post(`https://cvwebapiappcli3.azurewebsites.net/api/userlogin`, {
+      axios.post(`https://resumewebapiappcli3.azurewebsites.net/api/userlogin`, {
         userLoginId: email,
           firstName: firstName,
           lastName: lastName,
