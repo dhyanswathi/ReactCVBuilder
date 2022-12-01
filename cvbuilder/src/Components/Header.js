@@ -29,7 +29,7 @@ const Header = () => {
             <Link to="/About" className="nav-left">About</Link>
             <span className="nav-right">{username}</span>
             <Link to="/" className={'nav-right '+  logoutClass} onClick={onLinkClick}>Logout</Link>
-            <Link to="/Templates" className={'nav-right '+  logoutClass}>My Resume</Link>
+            <Link to="/Form" className={'nav-right '+  logoutClass}>My Resume</Link>
             <Link to="/Login" className={'nav-right '+  hiddenClass}>Log In</Link>
             <Link to="/Signup" className={'nav-right '+  hiddenClass}>Sign Up</Link>
     </section>
